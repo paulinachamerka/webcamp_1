@@ -176,6 +176,32 @@ li a
 {
 	font-size: 15px;
 }
+.prev
+{
+	padding-top: 5%;
+}
+}
+.prev2
+{
+	padding-top: 14%;
+}
+.left
+{
+	font-size: 250%;
+	padding-top: 30%;
+	color: grey;
+}
+.right
+{
+	font-size: 250%;
+	padding-top: 30%;
+	color: grey;
+}
+.icon i 
+{
+	padding: 2%;
+	font-size: 250%;
+}
 @media (min-width: 980px) 
 {
 	body
@@ -190,6 +216,9 @@ li a
 	{
 		width: 21%;
 	}
+	.col-lg-8 {width: 75%;}
+	.col-lg-12 {width: 98%;}
+	.col-lg-11 {width: 96.3%;}
 	.rabat_back
 	{
 		justify-content: center;
@@ -209,7 +238,6 @@ li a
     list-style-type: none;
     display: inline-block;
 }
-.col-lg-12 {width: 98%;}
 
 .rabat_text2
 {
@@ -289,5 +317,51 @@ li a
 {
 	padding-top: 10%;
 	padding-bottom: 10%;
+}
+.korzysci_opis
+{
+	padding-top: 5%;
+	padding-bottom: 7%;
+}
+.marki .items img
+{
+	width: 60%;
+	text-align: center;
+	justify-content: center;
+	z-index: -1;
+}
+.prev
+{
+	padding-top: 1%;
+}
+.block_carousel .container .row
+{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.slick-slide
+{
+	width: 90%;
+	padding: 0.3%;
+}
+.prev2
+{
+	padding-top: 14%;
+}
+.left
+{
+	margin-right: -3%;
+	z-index: 1;
+	color: white;
+}
+.right
+{
+	margin-left: -3%;
+	z-index: 1;
+	color: white;
+}
+.icon i 
+{
+	padding: 2%;
 }
 }

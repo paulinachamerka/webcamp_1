@@ -9,6 +9,7 @@
 	<link rel="stylesheet/less" href="styless.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
 	<!--slider-->
 	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
   	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
@@ -18,7 +19,222 @@
 </head>
 <body>
 	<header>
-		<nav></nav>
+		<div class="container">
+		<div class="row">
+			<div class="logo_ikony col-lg-12">
+				<div class="navbar fixed-top">
+				 	<a class="navbar-img" href="#">
+				    	<img src="logo.svg" alt="">
+				 	</a>
+				 	<div class="col-5 col-md-8 col-lg-10 ikony">
+
+				 		<form action="/action_page.php" class="wyszukiwarka">
+							 <input type="search" id="search" name="gsearch" placeholder="Wpisz czego szukasz" size="40" class="mobile_ikon">
+							 <button type="button"><i class="fas fa-search"></i></button>
+						</form>
+						<a href="" class="mobile_ikon"><i class="fas fa-phone-alt"></i></a>
+						<a href="" class="mobile_ikon"><i class="far fa-user"></i></a>
+						<a href=""><i class="far fa-heart"></i></a> 
+						
+
+						
+						
+						<div class="koszyk_deskop col-lg-1 ">
+							<div><a href=""><i class="fas fa-shopping-bag"></i></a></div>
+							<div class="sum">
+								<div><span class="mobile_ikon">koszyk</span></div>
+								<div><span class="bold mobile_ikon">225,00 zł</span></div>
+							</div>
+							<div><a href="" class="mobile_ikon"><i class="fas fa-angle-right"></i></a></div>
+						</div> 
+						
+						<!--<i class="fas fa-bars hamburger" id="nav-toggle"></i>-->
+						<div class="col-lg-0-1 language mobile_ikon">
+							<div><a href=""><img src="flag.svg" alt="flaga"></a></div>
+							<div>
+								<ul>
+								<li class="drop_language element_footer_head mobile_ikon"><i class="fas fa-angle-down"></i>
+							      <ul class="dropdown_language">
+							        <li><a href="">Spanish</a></li>
+							        <li><a href="">German</a></li>
+							        <li><a href="">English</a></li>
+							      </ul>
+							    </li>
+							    </ul>
+							</div>
+						</div>
+					</div>
+					<button class="hamburger" id="nav-toggle"></button>
+				</div>
+			</div>
+			<div class="wrapper">
+			<!--<nav class="navbar-menu">
+				
+				<ul class="menu-listing">-->
+					<nav class="navbar-menu fixed-top">
+					  <ul class="menu-listing">
+					    <li class="damskie"><a href="#">damskie</a>
+							<ul class="damskie_dropdown">
+								<li class="damskie_item"><a href="#">botki i kozaki</a>
+									<ul class="damskie_item_down">
+										<li><a href="">Botki</a></li>
+			      						<li><a href="">Glany</a></li>
+			      						<li><a href="">Kowbojki</a></li>
+			      						<li><a href="">Kozaki</a></li>
+			      						<li><a href="">Muszkieterki</a></li>
+			      						<li><a href="">Oficerki</a></li>
+			      						<li><a href="">Śniegowce</a></li>
+			      						<li><a href="">Sztyblety</a></li>
+			      						<li><a href="">Trekingi i trapery</a></li>
+									</ul>
+	      						</li>
+								<li class="damskie_item"><a href="#">klapki i sandały</a>
+									<ul class="damskie_item_down">
+										<li><a href="">Klapki</a></li>
+										<li><a href="">Sandały</a></li>
+									</ul>
+								</li>
+								<li class="damskie_item"><a href="#">półbuty</a>
+									<ul class="damskie_item_down">
+										<li><a href="">Baleriny</a></li>
+			      						<li><a href="">Czyłenka</a></li>
+			      						<li><a href="">Espadryle</a></li>
+			      						<li><a href="">Lordsy</a></li>
+			      						<li><a href="">Mokasyny</a></li>
+			      						<li><a href="">Na</a></li>
+			      						<li><a href="">Koturnie</a></li>
+			      						<li><a href="">Na</a></li>
+			      						<li><a href="">Obcasie</a></li>
+			      						<li><a href="">Oxfordy</a></li>
+			      						<li><a href="">Płaskie</a></li>
+									</ul>
+								</li>
+								<li class="damskie_item"><a href="#">marki</a>
+									<ul class="damskie_item_down">
+										<li><a href="">Nessi</a></li>
+										<li><a href="">Tamaris</a></li>
+										<li><a href="">Gino rossi</a></li>
+										<li><a href="">Carinii</a></li>
+										<li><a href="">Karino</a></li>
+										<li><a href="">Nessi</a></li>
+										<li><a href="">Tamaris</a></li>
+										<li><a href="">Gino rossi</a></li>
+										<li><a href="">Carinii</a></li>
+										<li><a href="">Karino</a></li>
+										<li><a href="" class="underline">wszytskie marki</a></li>
+									</ul>
+								</li>
+							</ul>		    
+						</li>
+					    <li><a href="#">meskie</a></li>
+					    <li><a href="#">torebki</a></li>
+					    <li><a href="#">akcesoria</a></li>
+					    <li><a href="#">premium</a></li>
+					    <li><a href="#">marki</a></li>
+					    <li><a href="#">nowości</a></li>
+					    <li><a href="#">wyprzedaż</a></li>
+					  </ul>
+					</nav>
+				</div>
+		
+			<div class="rabat_back_red">
+				<div class="rabat">
+					<div class="text1 col-10 col-lg-12 text-center" style="order:1;">
+							<span class="red">-20 na całą kolekcje zimową!</span>
+					</div>	
+				</div>
+			</div>
+			<div class="rabat_back_black">
+				<div class="rabat">
+					<div class="text1 col-10 col-lg-12 text-cente" style="order:2;">
+							<span class="black"><a href=""><i class="fas fa-shipping-fast"></i>darmowa dostawa</a></span>
+							<span class="black"><a href=""><i class="fas fa-sync-alt"></i>30 dni na zwrot</a></span>
+							<span class="black"><a href=""><i class="fas fa-percent"></i>10% na pierwsze zakupy</a></span>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+<!--
+					<li class="dropdown_menu"><a class="nav-link" href="#"><span>damskie</span></a>
+						ul class="dl-submenu">
+							<div class="column">
+						<ul>
+							<h4>botki i kozaki</h4>
+      						<li><a href="">Botki</a></li>
+      						<li><a href="">Glany</a></li>
+      						<li><a href="">Kowbojki</a></li>
+      						<li><a href="">Kozaki</a></li>
+      						<li><a href="">Muszkieterki</a></li>
+      						<li><a href="">Oficerki</a></li>
+      						<li><a href="">Śniegowce</a></li>
+      						<li><a href="">Sztyblety</a></li>
+      						<li><a href=""></a>Trekingi i trapery</li>
+						</ul>
+						<ul>
+							<h4>klapki i sandały</h4>
+							<li><a href="">Klapki</a></li>
+							<li><a href="">Sandały</a></li>
+						</ul>
+							</div>
+						<ul>
+							<h4>półbuty</h4>
+      						<li><a href="">Baleriny</a></li>
+      						<li><a href="">Czyłenka</a></li>
+      						<li><a href="">Espadryle</a></li>
+      						<li><a href="">Lordsy</a></li>
+      						<li><a href="">Mokasyny</a></li>
+      						<li><a href="">Na</a></li>
+      						<li><a href="">Koturnie</a></li>
+      						<li><a href="">Na</a></li>
+      						<li><a href="">Obcasie</a></li>
+      						<li><a href="">Oxfordy</a></li>
+      						<li><a href="">Płaskie</a></li>
+      					</ul>
+      					<div>
+      					<ul>
+      						<h4>marki</h4>
+							<li><a href="">Nessi</a></li>
+							<li><a href="">Tamaris</a></li>
+							<li><a href="">Gino rossi</a></li>
+							<li><a href="">Carinii</a></li>
+							<li><a href="">Karino</a></li>
+							<li><a href="">Nessi</a></li>
+							<li><a href="">Tamaris</a></li>
+							<li><a href="">Gino rossi</a></li>
+							<li><a href="">Carinii</a></li>
+							<li><a href="">Karino</a></li>
+							<li><a href="" class="underline">wszytskie marki</a></li>
+						</ul>
+						/div>
+					</ul>
+					</li>
+					 <li class="nav-item">
+				       <a class="nav-link" href="#">meskie</a>
+				     </li>
+				     <li class="nav-item">
+				       <a class="nav-link" href="#">torebki</a>
+				     </li>
+				     <li class="nav-item">
+				       <a class="nav-link" href="#">akcesoria</a>
+				     </li>
+				     <li class="nav-item">
+				       <a class="nav-link" href="#">premium</a>
+				     </li>
+				     <li class="nav-item">
+				       <a class="nav-link" href="#">marki</a>
+				     </li>
+				     <li class="nav-item">
+				       <a class="nav-link" href="#">nowości</a>
+				     </li>
+				     <li class="nav-item">
+				       <a class="nav-link" href="#">wyprzedaż</a>
+				     </li>
+				</ul>
+			</nav>-->
+	
 	</header>
 	<div class="slider">
 		<div class="container">
@@ -34,22 +250,22 @@
 	<div class="block_carousel">
 		<div class="container">
 			<div class="row">
-				<div class="prev"><i class="fas fa-chevron-left"></i></div>
+				<div class="prev"><i class="fas fa-chevron-left left_marki"></i></div>
 				<div class="marki multiple-items">
-					<div class="items"><img src="image.png" class="img-fluid" alt="marka1"></div>
-					<div class="items"><img src="marka2.svg" class="img-fluid" alt="marka2"></div>
-					<div class="items"><img src="marka3.svg" class="img-fluid" alt="marka3"></div>
-					<div class="items"><img src="marka4.svg" class="img-fluid" alt="marka4"></div>
-					<div class="items"><img src="marka5.svg" class="img-fluid" alt="marka5"></div>
-					<div class="items"><img src="marka6.svg" class="img-fluid" alt="marka6"></div>
-					<div class="items"><img src="image.png" class="img-fluid" alt="marka1"></div>
-					<div class="items"><img src="marka2.svg" class="img-fluid" alt="marka2"></div>
-					<div class="items"><img src="marka3.svg" class="img-fluid" alt="marka3"></div>
-					<div class="items"><img src="marka4.svg" class="img-fluid" alt="marka4"></div>
-					<div class="items"><img src="marka5.svg" class="img-fluid" alt="marka5"></div>
-					<div class="items"><img src="marka6.svg" class="img-fluid" alt="marka6"></div>
+					<div class="items"><a href=""><img src="image.png" class="img-fluid" alt="marka1"></a></div>
+					<div class="items"><a href=""><img src="marka2.svg" class="img-fluid" alt="marka2"></a></div>
+					<div class="items"><a href=""><img src="marka3.svg" class="img-fluid" alt="marka3"></a></div>
+					<div class="items"><a href=""><img src="marka4.svg" class="img-fluid" alt="marka4"></a></div>
+					<div class="items"><a href=""><img src="marka5.svg" class="img-fluid" alt="marka5"></a></div>
+					<div class="items"><a href=""><img src="marka6.svg" class="img-fluid" alt="marka6"></a></div>
+					<div class="items"><a href=""><img src="image.png" class="img-fluid" alt="marka1"></a></div>
+					<div class="items"><a href=""><img src="marka2.svg" class="img-fluid" alt="marka2"></a></div>
+					<div class="items"><a href=""><img src="marka3.svg" class="img-fluid" alt="marka3"></a></div>
+					<div class="items"><a href=""><img src="marka4.svg" class="img-fluid" alt="marka4"></a></div>
+					<div class="items"><a href=""><img src="marka5.svg" class="img-fluid" alt="marka5"></a></div>
+					<div class="items"><a href=""><img src="marka6.svg" class="img-fluid" alt="marka6"></a></div>
 				</div>
-				<div class="prev"><i class="fas fa-chevron-right"></i></div>
+				<div class="prev"><i class="fas fa-chevron-right right_marki"></i></div>
 			</div>
 		</div>
 	</div>
@@ -86,6 +302,61 @@
 					<p>baner reklamowy</p>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block_carousel">
+		<div class="container">
+			<div class="row">
+				<div class="text1 col-10 col-lg-12 text-center">
+					<p class="rabat_text1">WYBRANE DLA CIEBIE</p>
+				</div>
+				<div class="prev3"><i class="fas fa-chevron-left prev3_left"></i></div>
+				<div class="shoes multiple-items2 col-lg-10">
+					<div class="items">
+						<a href=""><img src="shoes1.svg" class="img-fluid" alt="shoes1"></a>
+						<div class="span1"><span>botki karino</span></div>
+						<div class="span2"><span>3019/076-f czarny </span></div>
+						<div class="span3"><span class="shoes_rabat_new">289,00 zł</span><span class="shoes_rabat">289,00 zł</span></div>
+					</div>
+					<div class="items">
+						<a href=""><img src="shoes2.svg" class="img-fluid" alt="shoes2"></a>
+						<div class="span1"><span>botki karino</span></div>
+						<div class="span2"><span>3019/076-f czarny </span></div>
+						<div class="span3"><span>289,00 zł</span></div>
+					</div>
+					<div class="items">
+						<a href=""><img src="shoes3.svg" class="img-fluid" alt="shoes3"></a>
+						<div class="span1"><span>botki karino</span></div>
+						<div class="span2"><span>3019/076-f czarny </span></div>
+						<div class="span3"><span>289,00 zł</span></div>
+					</div>
+					<div class="items">
+						<a href=""><img src="shoes4.svg" class="img-fluid" alt="shoes4"></a>
+						<div class="span1"><span>botki karino</span></div>
+						<div class="span2"><span>3019/076-f czarny </span></div>
+						<div class="span3"><span>289,00 zł</span></div>
+					</div>
+					<div class="items">
+						<a href=""><img src="shoes1.svg" class="img-fluid" alt="shoes1"></a>
+						<div class="span1"><span>botki karino</span></div>
+						<div class="span2"><span>3019/076-f czarny </span></div>
+						<div class="span3"><span>289,00 zł</span></div>
+					</div>
+					<div class="items">
+						<a href=""><img src="shoes2.svg" class="img-fluid" alt="shoes2"></a>
+						<div class="span1"><span>botki karino</span></div>
+						<div class="span2"><span>3019/076-f czarny </span></div>
+						<div class="span3"><span>289,00 zł</span></div>
+					</div>
+					<div class="items">
+						<a href=""><img src="shoes3.svg" class="img-fluid" alt="shoes3"></a>
+						<div class="span1"><span>botki karino</span></div>
+						<div class="span2"><span>3019/076-f czarny </span></div>
+						<div class="span3"><span>289,00 zł</span></div>
+					</div>
+				</div>
+				<div class="prev3"><i class="fas fa-chevron-right prev3_right"></i></div>
 			</div>
 		</div>
 	</div>
@@ -158,14 +429,15 @@
 		<div class="container">
 			<div class="row korzysci_opis">
 				<div class="korzysci_content col-10 col-lg-8 text-center">
-				<p>SEO Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie.</p>
+					<p>SEO Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="footer">
 		<div class="container rabat_back">
 			<div class="row  rabat">
-				<div class="text1 col-10 col-lg-1 text-center">
+				<div class="text1 col-10 col-lg-12 text-center">
 					<p class="rabat_text1">- 10% NA PIERWSZE ZAKUPY</p>
 					<p class="rabat_text2">Zapisz sie do newslettera i zyskaj rabat</p>
 					<a href="newsletter.html" class="button">Otrzymaj rabat</a>
@@ -188,7 +460,8 @@
 				        <li><a href="">Zarejestruj sie</a></li>
 				        <li><a href="">Moje zamówienia</a></li>
 				        <li><a href="">Koszyk</a></li>
-				        <li><a href="">Ulubione</a></li>					   <li><a href="">Historia transakcji</a></li>
+				        <li><a href="">Ulubione</a></li>					   
+				        <li><a href="">Historia transakcji</a></li>
 					    <li><a href="">Moje rabaty</a></li>
 					    <li><a href="">Newsletter</a></li>
 				      </ul>
@@ -198,7 +471,8 @@
 				        <li><a href="">Informacje o sklepie</a></li>
 				        <li><a href="">Wysyłka</a></li>
 				        <li><a href="">Sposoby płatności i prowizji</a></li>
-				        <li><a href="">Regulamin</a></li>					        <li><a href="">Polityka prywatności</a></li>
+				        <li><a href="">Regulamin</a></li>					        
+				        <li><a href="">Polityka prywatności</a></li>
 					    <li><a href="">Odstąpienie od umowy</a></li>
 					   </ul>
 				    </li>
@@ -206,7 +480,8 @@
 				      <ul class="dropdown">
 				        <li><a href="">O nas</a></li>
 				        <li><a href="">Blog</a></li>
-				        <li><a href="">Jak dobrać rozmiar</a></li>					<li><a href="">Tebela rozmiarów</a></li>
+				        <li><a href="">Jak dobrać rozmiar</a></li>					
+				        <li><a href="">Tebela rozmiarów</a></li>
 					    <li><a href="">Pielegnacja obuwia</a></li>
 					    <li><a href="">Technologie</a></li>
 				      </ul>
@@ -240,6 +515,9 @@
 	<!--slider-->
 	<script>
 		$(document).ready(function(){
+
+			
+
 			$('.slider_elem').slick(
 			{
 				dots: false,
@@ -275,6 +553,35 @@
 	                    },
 	                ]
 				});
+			$('.multiple-items2').slick({
+				arrows: true,
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: false,
+				nextArrow: $('.fa-chevron-right'),
+				prevArrow: $('.fa-chevron-left'),
+				responsive: [
+					{
+	                        breakpoint: 600,
+	                        settings: {
+	                        	arrows: false,
+	                            slidesToShow: 1.8,
+	                             slidesToScroll: 1,
+	                             infinite: true,
+
+	                        }
+	                    },
+	                    {
+	                        breakpoint: 900,
+	                        settings: {
+	                            slidesToShow: 3,
+	                             slidesToScroll: 1,
+	                             infinite: true,
+	                        }
+	                    },
+	                ]
+				});
 				$('.slider2').slick({
 						arrows: true,
 					  infinite: true,
@@ -303,18 +610,57 @@
 	                    },
 	                ]
 				});
+
 				
-			});
+$('.drop').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+				
+				$('.drop_language').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+				  
+
+				/*$(".dropdown_menu")
+				  .mouseover(function() {
+				  $(".dl-submenu").show(300);
+				});
+				$(".dropdown_menu")
+				  .mouseleave(function() {
+				  $(".dl-submenu").hide(300);     
+				});*/
+				
+ 				
+  /*mobile nav*/
+  $('.hamburger').click(function() {
+  $('.hamburger').toggleClass('active');
+  $('.navbar-menu').toggleClass('active');
+});
+ $('.damskie').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+
+ $('.damskie_item').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+		});	
 			
+	</script>
+	<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar-menu");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 	</script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  	
   	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-	<!--footer-->
-	<script>
-	  $('.drop_elem').click(function() {
-	    $(this).children('ul').slideToggle();
-	  });
-	</script>
 </body>
 </html>

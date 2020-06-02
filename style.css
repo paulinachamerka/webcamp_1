@@ -871,7 +871,7 @@ td a
 {
 	body
 	{
-		font-size: 25px;
+		font-size: 13px;
 	}
 	
 	.col-lg-1 {width: 8.33%;}
@@ -1034,9 +1034,13 @@ td a
 }
 .prev3
 {
-	display: block;
+	padding-top: 10%;
 }
-
+.next3
+{
+	padding-top: 10%;
+}
+}
 
 
 .rabat_back_red .rabat .text1, .rabat_back_black .rabat .text1
@@ -1325,11 +1329,13 @@ nav ul li .column ul
 {
 	order: -3;
 	padding: 0 0;
+	height: 15%;
 }
 .promo
 {
 	order: -2;
 	display: block;
+	height: 15%;
 }
 .promo2
 {
@@ -1376,6 +1382,55 @@ nav ul li .column ul
 .span2
 {
 	font-size: 15px;
+}
+.produkt_szczegoly
+{
+	background: white;
+}
+.produkt_szczegoly .container .row table
+{
+	width: 100%;
+	text-align: left;
+	font-size: 15px;
+	padding: 2%;
+	
+}
+table 
+{
+	font-size: 15px;
+	width: 100%;
+}
+
+.tabela_opis_produkt
+{
+	background: #F5F5F5;
+	padding-left: 5%;
+}
+.opis_produktu_undertable
+{
+	background: #F5F5F5;
+	padding-left: 5%;
+}
+.produkt_szczegoly .container .row .zdjecia_produktu
+{
+	height: 60%;
+}
+.akcesoria span, .span3
+{
+	font-size: 13px;
+}
+.container_opinie .container
+{
+	margin: 0;
+	
+	}
+.container_opinie
+{
+	font-size: 15px;
+}
+.block_carousel
+{
+	float: none;
 }
 }
 

@@ -250,7 +250,7 @@
 	<div class="block_carousel">
 		<div class="container">
 			<div class="row">
-				<div class="prev"><i class="fas fa-chevron-left left_marki"></i></div>
+				<div class="next"><i class="fas fa-chevron-left left_marki"></i></div>
 				<div class="marki multiple-items">
 					<div class="items"><a href=""><img src="image.png" class="img-fluid" alt="marka1"></a></div>
 					<div class="items"><a href=""><img src="marka2.svg" class="img-fluid" alt="marka2"></a></div>
@@ -311,7 +311,7 @@
 				<div class="text1 col-10 col-lg-12 text-center">
 					<p class="rabat_text1">WYBRANE DLA CIEBIE</p>
 				</div>
-				<div class="prev3"><i class="fas fa-chevron-left prev3_left"></i></div>
+				<div class="next3 col-lg-1"><i class="fas fa-chevron-left prev3_left"></i></div>
 				<div class="shoes multiple-items2 col-lg-10">
 					<div class="items">
 						<a href=""><img src="shoes1.svg" class="img-fluid" alt="shoes1"></a>
@@ -532,8 +532,8 @@
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplaySpeed: 1500,
-				nextArrow: $('.fa-chevron-right'),
-				prevArrow: $('.fa-chevron-left'),
+				nextArrow: $('.prev'),
+				prevArrow: $('.next'),
 				responsive: [
 					{
 	                        breakpoint: 600,
@@ -559,8 +559,8 @@
 				slidesToShow: 4,
 				slidesToScroll: 1,
 				autoplay: false,
-				nextArrow: $('.fa-chevron-right'),
-				prevArrow: $('.fa-chevron-left'),
+				nextArrow: $('.prev3'),
+				prevArrow: $('.next3'),
 				responsive: [
 					{
 	                        breakpoint: 600,

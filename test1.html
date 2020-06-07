@@ -7,16 +7,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 	<script src="less.js" type="text/javascript"></script>
 	<link rel="stylesheet/less" href="styless.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/scriptJS.js"></script>
-	<script type="text/javascript" src="js/scriptJQ.js"></script>
+	<link rel="stylesheet" href="css/stylekopia.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	
 	<!--slider-->
 	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
   	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   	<!--fontello-->
-  	<link rel="stylesheet" type="text/css" href="fontello.css"/>
+  	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
 	<script src="https://kit.fontawesome.com/72132bb0f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,7 +36,7 @@
 						<a href="" class="mobile_ikon"><i class="fas fa-phone-alt"></i></a>
 						<a href="" class="mobile_ikon"><i class="far fa-user"></i></a>
 						<a href=""><i class="far fa-heart"></i></a> 
-						
+						<button class="hamburger" id="nav-toggle"></button>
 
 						
 						
@@ -47,12 +46,12 @@
 								<div><span class="mobile_ikon">koszyk</span></div>
 								<div><span class="bold mobile_ikon">225,00 zł</span></div>
 							</div>
-							<div><a href="" class="mobile_ikon"><i class="fas fa-angle-right"></i></a></div>
+							<div><a href="" class="mobile_ikon"><i class="fas fa-angle-right mobile-ikon-position"></i></a></div>
 						</div> 
 						
 						<!--<i class="fas fa-bars hamburger" id="nav-toggle"></i>-->
 						<div class="col-lg-0-1 language mobile_ikon">
-							<div><a href=""><img src="flag.svg" alt="flaga"></a></div>
+							<div><a href="" class="language_position"><img src="flag.svg" alt="flaga"></a></div>
 							<div>
 								<ul>
 								<li class="drop_language element_footer_head mobile_ikon"><i class="fas fa-angle-down"></i>
@@ -66,79 +65,185 @@
 							</div>
 						</div>
 					</div>
-					<button class="hamburger" id="nav-toggle"></button>
+					
 				</div>
 			</div>
+
 			<div class="wrapper">
-			<!--<nav class="navbar-menu">
-				
-				<ul class="menu-listing">-->
-					<nav class="navbar-menu fixed-top">
-					  <ul class="menu-listing">
-					    <li class="damskie"><a href="#">damskie</a>
-							<ul class="damskie_dropdown">
-								<li class="damskie_item"><a href="#">botki i kozaki</a>
-									<ul class="damskie_item_down">
-										<li><a href="">Botki</a></li>
-			      						<li><a href="">Glany</a></li>
-			      						<li><a href="">Kowbojki</a></li>
-			      						<li><a href="">Kozaki</a></li>
-			      						<li><a href="">Muszkieterki</a></li>
-			      						<li><a href="">Oficerki</a></li>
-			      						<li><a href="">Śniegowce</a></li>
-			      						<li><a href="">Sztyblety</a></li>
-			      						<li><a href="">Trekingi i trapery</a></li>
-									</ul>
-	      						</li>
-								<li class="damskie_item"><a href="#">klapki i sandały</a>
-									<ul class="damskie_item_down">
-										<li><a href="">Klapki</a></li>
-										<li><a href="">Sandały</a></li>
-									</ul>
+				<nav class="navbar-menu">
+				  	<ul class="menu-listing">
+					  	<div class="container">
+				    		<div class="row">
+								<li class="damskie col-lg-1"><a href="#" class="nav-hover">Damskie<i class="icon-right-open flex-end"></i></a>
+								<ul class="damskie_dropdown">
+									<div class="col-lg-7 rodzaje-baner-menu">
+									<div class="div_rodzaje col-lg-7">
+										<div class="div_dwie col-lg-4 col-10">
+										<li class="damskie_item"><a href="#" class="damskie_item_name">botki i kozaki</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Botki</a></li>
+					      						<li><a href="">Glany</a></li>
+					      						<li><a href="">Kowbojki</a></li>
+					      						<li><a href="">Kozaki</a></li>
+					      						<li><a href="">Muszkieterki</a></li>
+					      						<li><a href="">Oficerki</a></li>
+					      						<li><a href="">Śniegowce</a></li>
+					      						<li><a href="">Sztyblety</a></li>
+					      						<li><a href="">Trekingi i trapery</a></li>
+											</ul>
+										</li>
+										<li class="damskie_item"><a href="#" class="damskie_item_name">klapki i sandały</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Klapki</a></li>
+												<li><a href="">Sandały</a></li>
+											</ul>
+										</li>
+										</div>
+										<div classs="polbuty-menu" style="width: 130px;">
+										<li class="damskie_item"><a href="#" class="damskie_item_name">półbuty</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Baleriny</a></li>
+					      						<li><a href="">Czyłenka</a></li>
+					      						<li><a href="">Espadryle</a></li>
+					      						<li><a href="">Lordsy</a></li>
+					      						<li><a href="">Mokasyny</a></li>
+					      						<li><a href="">Na</a></li>
+					      						<li><a href="">Koturnie</a></li>
+					      						<li><a href="">Na</a></li>
+					      						<li><a href="">Obcasie</a></li>
+					      						<li><a href="">Oxfordy</a></li>
+					      						<li><a href="">Płaskie</a></li>
+											</ul>
+										</li>
+										</div>
+										<div class="col-lg-3 marki-menu">				<li class="damskie_item"><a href="#" class="damskie_item_name">marki</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Nessi</a></li>
+												<li><a href="">Tamaris</a></li>
+												<li><a href="">Gino rossi</a></li>
+												<li><a href="">Carinii</a></li>
+												<li><a href="">Karino</a></li>
+												<li><a href="">Nessi</a></li>
+												<li><a href="">Tamaris</a></li>
+												<li><a href="">Gino rossi</a></li>
+												<li><a href="">Carinii</a></li>
+												<li><a href="">Karino</a></li>
+												<li><a href="" class="underline">wszytskie marki</a></li>
+											</ul>
+										</li>
+									</div>
+									</div>
+									<div class="col-lg-5 baner-menu">
+										<div class="col-lg-11">
+											<img src="baner.svg" class="img-fluid" alt="baner reklamowy">
+										</div>
+										<div class="under-baner-menu">
+									
+											<div><a href=""><span class="damskie_item_name">Nowości</span></a></div>
+											<div><a href=""><span class="damskie_item_name">Wyprzedaż</span></a></div>
+											<div><a href=""><span class="damskie_item_name">Bestsellery</span></a></div>
+										
+										</div>
+									</div>
+								</div>
+								</ul>
 								</li>
-								<li class="damskie_item"><a href="#">półbuty</a>
-									<ul class="damskie_item_down">
-										<li><a href="">Baleriny</a></li>
-			      						<li><a href="">Czyłenka</a></li>
-			      						<li><a href="">Espadryle</a></li>
-			      						<li><a href="">Lordsy</a></li>
-			      						<li><a href="">Mokasyny</a></li>
-			      						<li><a href="">Na</a></li>
-			      						<li><a href="">Koturnie</a></li>
-			      						<li><a href="">Na</a></li>
-			      						<li><a href="">Obcasie</a></li>
-			      						<li><a href="">Oxfordy</a></li>
-			      						<li><a href="">Płaskie</a></li>
+
+							    <li class="meskie col-lg-1"><a href="#" class="nav-hover">Meskie<i class="icon-right-open 	flex-end"></i></a>
+									<ul class="meskie_dropdown">
+										<div class="col-lg-7 rodzaje-baner-menu">
+										<div class="div_rodzaje col-lg-7">
+											<div class="div_dwie col-lg-4 col-10">
+											<li class="damskie_item"><a href="#" class="damskie_item_name">botki i kozaki</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Botki</a></li>
+						      						<li><a href="">Glany</a></li>
+						      						<li><a href="">Kowbojki</a></li>
+						      						<li><a href="">Kozaki</a></li>
+						      						<li><a href="">Muszkieterki</a></li>
+						      						<li><a href="">Oficerki</a></li>
+						      						<li><a href="">Śniegowce</a></li>
+						      						<li><a href="">Sztyblety</a></li>
+						      						<li><a href="">Trekingi i trapery</a></li>
+												</ul>
+											</li>
+											<li class="damskie_item"><a href="#" class="damskie_item_name">klapki i sandały</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Klapki</a></li>
+													<li><a href="">Sandały</a></li>
+												</ul>
+											</li>
+											</div>
+											<div classs="polbuty-menu" style="width: 130px;">
+											<li class="damskie_item"><a href="#" class="damskie_item_name">półbuty</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Baleriny</a></li>
+						      						<li><a href="">Czyłenka</a></li>
+						      						<li><a href="">Espadryle</a></li>
+						      						<li><a href="">Lordsy</a></li>
+						      						<li><a href="">Mokasyny</a></li>
+						      						<li><a href="">Na</a></li>
+						      						<li><a href="">Koturnie</a></li>
+						      						<li><a href="">Na</a></li>
+						      						<li><a href="">Obcasie</a></li>
+						      						<li><a href="">Oxfordy</a></li>
+						      						<li><a href="">Płaskie</a></li>
+												</ul>
+											</li>
+											</div>
+											<div class="col-lg-3 marki-menu">				<li class="damskie_item"><a href="#" class="damskie_item_name">marki</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Nessi</a></li>
+													<li><a href="">Tamaris</a></li>
+													<li><a href="">Gino rossi</a></li>
+													<li><a href="">Carinii</a></li>
+													<li><a href="">Karino</a></li>
+													<li><a href="">Nessi</a></li>
+													<li><a href="">Tamaris</a></li>
+													<li><a href="">Gino rossi</a></li>
+													<li><a href="">Carinii</a></li>
+													<li><a href="">Karino</a></li>
+													<li><a href="" class="underline">wszytskie marki</a></li>
+												</ul>
+											</li>
+										</div>
+										</div>
+										<div class="col-lg-5 baner-menu">
+											<div class="col-lg-11">
+												<img src="baner.svg" class="img-fluid" alt="baner reklamowy">
+											</div>
+											<div class="under-baner-menu">
+										
+												<div><a href=""><span class="damskie_item_name">Nowości</span></a></div>
+												<div><a href=""><span class="damskie_item_name">Wyprzedaż</span></a></div>
+												<div><a href=""><span class="damskie_item_name">Bestsellery</span></a></div>
+											
+											</div>
+										</div>
+									</div>
 									</ul>
-								</li>
-								<li class="damskie_item"><a href="#">marki</a>
-									<ul class="damskie_item_down">
-										<li><a href="">Nessi</a></li>
-										<li><a href="">Tamaris</a></li>
-										<li><a href="">Gino rossi</a></li>
-										<li><a href="">Carinii</a></li>
-										<li><a href="">Karino</a></li>
-										<li><a href="">Nessi</a></li>
-										<li><a href="">Tamaris</a></li>
-										<li><a href="">Gino rossi</a></li>
-										<li><a href="">Carinii</a></li>
-										<li><a href="">Karino</a></li>
-										<li><a href="" class="underline">wszytskie marki</a></li>
-									</ul>
-								</li>
-							</ul>		    
-						</li>
-					    <li><a href="#">meskie</a></li>
-					    <li><a href="#">torebki</a></li>
-					    <li><a href="#">akcesoria</a></li>
-					    <li><a href="#">premium</a></li>
-					    <li><a href="#">marki</a></li>
-					    <li><a href="#">nowości</a></li>
-					    <li><a href="#">wyprzedaż</a></li>
-					  </ul>
-					</nav>
-				</div>
-		
+							    </li>
+							    <li><a href="#" class="nav-hover">Torebki<i class="icon-right-open 	flex-end"></i></a></li>
+							    <li><a href="#" class="nav-hover">Akcesoria<i class="icon-right-open flex-end"></i></a></li>
+							    <li><a href="#" class="nav-hover">Premium<i class="icon-right-open flex-end"></i></a></li>
+							    <li><a href="#" class="nav-hover">Marki</a></li>
+							    <li><a href="#" class="nav-hover">Nowości</a></li>
+							    <li><a href="#" class="nav-hover">Wyprzedaż</a></li>
+							    <div class="mobile-menu">
+								    <li class="grey"><a href="#"><i class="mobile-menu-greyelement icon-user"></i>Zaloguj sie</a></li>
+								    <li class="grey"><a href="#"><i class="icon-lock"></i>Zarejestruj sie</a></li>
+								    <li class="grey"><a href="#"><i class="icon-globe"></i>Sprawdź status zamówienia</a></li>
+								    <li class="grey"><a href="#"><i class="icon-phone"></i>+48 78681822</a></li>
+								    <li class="grey"><a href="#"><i class="icon-mail-alt"></i>bok@armodo.pl</a></li>
+								    <li class="grey"><a href="#"><img src="flag.svg" alt="flaga">0,00 zł | 0,00 zł</a></li>
+							  	</div>
+							</div>
+					 	</div>
+					 </ul>
+				</nav>
+			</div>
+						    	
+			
 			<div class="rabat_back_red">
 				<div class="rabat">
 					<div class="text1 col-10 col-lg-12 text-center" style="order:1;">
@@ -159,84 +264,7 @@
 	</div>
 		
 
-<!--
-					<li class="dropdown_menu"><a class="nav-link" href="#"><span>damskie</span></a>
-						ul class="dl-submenu">
-							<div class="column">
-						<ul>
-							<h4>botki i kozaki</h4>
-      						<li><a href="">Botki</a></li>
-      						<li><a href="">Glany</a></li>
-      						<li><a href="">Kowbojki</a></li>
-      						<li><a href="">Kozaki</a></li>
-      						<li><a href="">Muszkieterki</a></li>
-      						<li><a href="">Oficerki</a></li>
-      						<li><a href="">Śniegowce</a></li>
-      						<li><a href="">Sztyblety</a></li>
-      						<li><a href=""></a>Trekingi i trapery</li>
-						</ul>
-						<ul>
-							<h4>klapki i sandały</h4>
-							<li><a href="">Klapki</a></li>
-							<li><a href="">Sandały</a></li>
-						</ul>
-							</div>
-						<ul>
-							<h4>półbuty</h4>
-      						<li><a href="">Baleriny</a></li>
-      						<li><a href="">Czyłenka</a></li>
-      						<li><a href="">Espadryle</a></li>
-      						<li><a href="">Lordsy</a></li>
-      						<li><a href="">Mokasyny</a></li>
-      						<li><a href="">Na</a></li>
-      						<li><a href="">Koturnie</a></li>
-      						<li><a href="">Na</a></li>
-      						<li><a href="">Obcasie</a></li>
-      						<li><a href="">Oxfordy</a></li>
-      						<li><a href="">Płaskie</a></li>
-      					</ul>
-      					<div>
-      					<ul>
-      						<h4>marki</h4>
-							<li><a href="">Nessi</a></li>
-							<li><a href="">Tamaris</a></li>
-							<li><a href="">Gino rossi</a></li>
-							<li><a href="">Carinii</a></li>
-							<li><a href="">Karino</a></li>
-							<li><a href="">Nessi</a></li>
-							<li><a href="">Tamaris</a></li>
-							<li><a href="">Gino rossi</a></li>
-							<li><a href="">Carinii</a></li>
-							<li><a href="">Karino</a></li>
-							<li><a href="" class="underline">wszytskie marki</a></li>
-						</ul>
-						/div>
-					</ul>
-					</li>
-					 <li class="nav-item">
-				       <a class="nav-link" href="#">meskie</a>
-				     </li>
-				     <li class="nav-item">
-				       <a class="nav-link" href="#">torebki</a>
-				     </li>
-				     <li class="nav-item">
-				       <a class="nav-link" href="#">akcesoria</a>
-				     </li>
-				     <li class="nav-item">
-				       <a class="nav-link" href="#">premium</a>
-				     </li>
-				     <li class="nav-item">
-				       <a class="nav-link" href="#">marki</a>
-				     </li>
-				     <li class="nav-item">
-				       <a class="nav-link" href="#">nowości</a>
-				     </li>
-				     <li class="nav-item">
-				       <a class="nav-link" href="#">wyprzedaż</a>
-				     </li>
-				</ul>
-			</nav>-->
-	
+
 	</header>
 	<div class="slider">
 		<div class="container">
@@ -623,19 +651,13 @@ $('.drop').click(function() {
 				  });
 				  
 
-				/*$(".dropdown_menu")
-				  .mouseover(function() {
-				  $(".dl-submenu").show(300);
-				});
-				$(".dropdown_menu")
-				  .mouseleave(function() {
-				  $(".dl-submenu").hide(300);     
-				});*/
+	
 				
  				
   /*mobile nav*/
-  $('.hamburger').click(function() {
+ $('.hamburger').click(function() {
   $('.hamburger').toggleClass('active');
+  $('.hamburger').toggleClass('changeplacebutton');
   $('.navbar-menu').toggleClass('active');
 });
  $('.damskie').click(function() {
@@ -645,6 +667,10 @@ $('.drop').click(function() {
  $('.damskie_item').click(function() {
 				    $(this).children('ul').slideToggle();
 				  });
+ $('.meskie').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+
 		});	
 			
 	</script>

@@ -5,23 +5,269 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-	<script src="less.js" type="text/javascript"></script>
+	<!--<script src="less.js" type="text/javascript"></script>-->
 	<link rel="stylesheet/less" href="styless.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/scriptJS.js"></script>
-	<script type="text/javascript" src="js/scriptJQ.js"></script>
+	<link rel="stylesheet" href="css/stylekopia.css">
+	<!--<script type="text/javascript" src="js/scriptJQ.js"></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	
 	<!--slider-->
 	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
   	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   	<!--fontello-->
-<link rel="stylesheet" type="text/css" href="fontello-055ff059/css/fontello.css"/>
+<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
 
   	<script src="https://kit.fontawesome.com/72132bb0f5.js" crossorigin="anonymous"></script>
   	
 </head>
 <body>
+	<header>
+		<div class="container">
+		<div class="row">
+			<div class="logo_ikony col-lg-12">
+				<div class="navbar fixed-top">
+				 	<a class="navbar-img" href="#">
+				    	<img src="logo.svg" alt="">
+				 	</a>
+				 	<div class="col-5 col-md-8 col-lg-10 ikony">
+
+				 		<form action="/action_page.php" class="wyszukiwarka">
+							 <input type="search" id="search" name="gsearch" placeholder="Wpisz czego szukasz" size="40" class="mobile_ikon">
+							 <button type="button"><i class="fas fa-search"></i></button>
+						</form>
+						<a href="" class="mobile_ikon"><i class="fas fa-phone-alt"></i></a>
+						<a href="" class="mobile_ikon"><i class="far fa-user"></i></a>
+						<a href=""><i class="far fa-heart"></i></a> 
+						<button class="hamburger" id="nav-toggle"></button>
+
+						
+						
+						<div class="koszyk_deskop col-lg-1 ">
+							<div><a href=""><i class="fas fa-shopping-bag"></i></a></div>
+							<div class="sum">
+								<div><span class="mobile_ikon">koszyk</span></div>
+								<div><span class="bold mobile_ikon">225,00 zł</span></div>
+							</div>
+							<div><a href="" class="mobile_ikon"><i class="fas fa-angle-right mobile-ikon-position"></i></a></div>
+						</div> 
+						
+						<!--<i class="fas fa-bars hamburger" id="nav-toggle"></i>-->
+						<div class="col-lg-0-1 language mobile_ikon">
+							<div><a href="" class="language_position"><img src="flag.svg" alt="flaga"></a></div>
+							<div>
+								<ul>
+								<li class="drop_language element_footer_head mobile_ikon"><i class="fas fa-angle-down"></i>
+							      <ul class="dropdown_language">
+							        <li><a href="">Spanish</a></li>
+							        <li><a href="">German</a></li>
+							        <li><a href="">English</a></li>
+							      </ul>
+							    </li>
+							    </ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="wrapper">
+				<nav class="navbar-menu">
+				  	<ul class="menu-listing">
+					  	<div class="container">
+				    		<div class="row">
+								<li class="damskie col-lg-1"><a href="#" class="nav-hover">Damskie<i class="icon-right-open flex-end"></i></a>
+								<ul class="damskie_dropdown">
+									<div class="col-lg-7 rodzaje-baner-menu">
+									<div class="div_rodzaje col-lg-7">
+										<div class="div_dwie col-lg-4 col-10">
+										<li class="damskie_item"><a href="#" class="damskie_item_name">botki i kozaki</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Botki</a></li>
+					      						<li><a href="">Glany</a></li>
+					      						<li><a href="">Kowbojki</a></li>
+					      						<li><a href="">Kozaki</a></li>
+					      						<li><a href="">Muszkieterki</a></li>
+					      						<li><a href="">Oficerki</a></li>
+					      						<li><a href="">Śniegowce</a></li>
+					      						<li><a href="">Sztyblety</a></li>
+					      						<li><a href="">Trekingi i trapery</a></li>
+											</ul>
+										</li>
+										<li class="damskie_item"><a href="#" class="damskie_item_name">klapki i sandały</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Klapki</a></li>
+												<li><a href="">Sandały</a></li>
+											</ul>
+										</li>
+										</div>
+										<div classs="polbuty-menu" style="width: 130px;">
+										<li class="damskie_item"><a href="#" class="damskie_item_name">półbuty</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Baleriny</a></li>
+					      						<li><a href="">Czyłenka</a></li>
+					      						<li><a href="">Espadryle</a></li>
+					      						<li><a href="">Lordsy</a></li>
+					      						<li><a href="">Mokasyny</a></li>
+					      						<li><a href="">Na</a></li>
+					      						<li><a href="">Koturnie</a></li>
+					      						<li><a href="">Na</a></li>
+					      						<li><a href="">Obcasie</a></li>
+					      						<li><a href="">Oxfordy</a></li>
+					      						<li><a href="">Płaskie</a></li>
+											</ul>
+										</li>
+										</div>
+										<div class="col-lg-3 marki-menu">				<li class="damskie_item"><a href="#" class="damskie_item_name">marki</a>
+											<ul class="damskie_item_down">
+												<li><a href="">Nessi</a></li>
+												<li><a href="">Tamaris</a></li>
+												<li><a href="">Gino rossi</a></li>
+												<li><a href="">Carinii</a></li>
+												<li><a href="">Karino</a></li>
+												<li><a href="">Nessi</a></li>
+												<li><a href="">Tamaris</a></li>
+												<li><a href="">Gino rossi</a></li>
+												<li><a href="">Carinii</a></li>
+												<li><a href="">Karino</a></li>
+												<li><a href="" class="underline">wszytskie marki</a></li>
+											</ul>
+										</li>
+									</div>
+									</div>
+									<div class="col-lg-5 baner-menu">
+										<div class="col-lg-11">
+											<img src="baner.svg" class="img-fluid" alt="baner reklamowy">
+										</div>
+										<div class="under-baner-menu">
+									
+											<div><a href=""><span class="damskie_item_name">Nowości</span></a></div>
+											<div><a href=""><span class="damskie_item_name">Wyprzedaż</span></a></div>
+											<div><a href=""><span class="damskie_item_name">Bestsellery</span></a></div>
+										
+										</div>
+									</div>
+								</div>
+								</ul>
+								</li>
+
+							    <li class="meskie col-lg-1"><a href="#" class="nav-hover">Meskie<i class="icon-right-open 	flex-end"></i></a>
+									<ul class="meskie_dropdown">
+										<div class="col-lg-7 rodzaje-baner-menu">
+										<div class="div_rodzaje col-lg-7">
+											<div class="div_dwie col-lg-4 col-10">
+											<li class="damskie_item"><a href="#" class="damskie_item_name">botki i kozaki</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Botki</a></li>
+						      						<li><a href="">Glany</a></li>
+						      						<li><a href="">Kowbojki</a></li>
+						      						<li><a href="">Kozaki</a></li>
+						      						<li><a href="">Muszkieterki</a></li>
+						      						<li><a href="">Oficerki</a></li>
+						      						<li><a href="">Śniegowce</a></li>
+						      						<li><a href="">Sztyblety</a></li>
+						      						<li><a href="">Trekingi i trapery</a></li>
+												</ul>
+											</li>
+											<li class="damskie_item"><a href="#" class="damskie_item_name">klapki i sandały</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Klapki</a></li>
+													<li><a href="">Sandały</a></li>
+												</ul>
+											</li>
+											</div>
+											<div classs="polbuty-menu" style="width: 130px;">
+											<li class="damskie_item"><a href="#" class="damskie_item_name">półbuty</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Baleriny</a></li>
+						      						<li><a href="">Czyłenka</a></li>
+						      						<li><a href="">Espadryle</a></li>
+						      						<li><a href="">Lordsy</a></li>
+						      						<li><a href="">Mokasyny</a></li>
+						      						<li><a href="">Na</a></li>
+						      						<li><a href="">Koturnie</a></li>
+						      						<li><a href="">Na</a></li>
+						      						<li><a href="">Obcasie</a></li>
+						      						<li><a href="">Oxfordy</a></li>
+						      						<li><a href="">Płaskie</a></li>
+												</ul>
+											</li>
+											</div>
+											<div class="col-lg-3 marki-menu">				<li class="damskie_item"><a href="#" class="damskie_item_name">marki</a>
+												<ul class="damskie_item_down">
+													<li><a href="">Nessi</a></li>
+													<li><a href="">Tamaris</a></li>
+													<li><a href="">Gino rossi</a></li>
+													<li><a href="">Carinii</a></li>
+													<li><a href="">Karino</a></li>
+													<li><a href="">Nessi</a></li>
+													<li><a href="">Tamaris</a></li>
+													<li><a href="">Gino rossi</a></li>
+													<li><a href="">Carinii</a></li>
+													<li><a href="">Karino</a></li>
+													<li><a href="" class="underline">wszytskie marki</a></li>
+												</ul>
+											</li>
+										</div>
+										</div>
+										<div class="col-lg-5 baner-menu">
+											<div class="col-lg-11">
+												<img src="baner.svg" class="img-fluid" alt="baner reklamowy">
+											</div>
+											<div class="under-baner-menu">
+										
+												<div><a href=""><span class="damskie_item_name">Nowości</span></a></div>
+												<div><a href=""><span class="damskie_item_name">Wyprzedaż</span></a></div>
+												<div><a href=""><span class="damskie_item_name">Bestsellery</span></a></div>
+											
+											</div>
+										</div>
+									</div>
+									</ul>
+							    </li>
+							    <li><a href="#" class="nav-hover">Torebki<i class="icon-right-open 	flex-end"></i></a></li>
+							    <li><a href="#" class="nav-hover">Akcesoria<i class="icon-right-open flex-end"></i></a></li>
+							    <li><a href="#" class="nav-hover">Premium<i class="icon-right-open flex-end"></i></a></li>
+							    <li><a href="#" class="nav-hover">Marki</a></li>
+							    <li><a href="#" class="nav-hover">Nowości</a></li>
+							    <li><a href="#" class="nav-hover">Wyprzedaż</a></li>
+							    <div class="mobile-menu">
+								    <li class="grey"><a href="#"><i class="mobile-menu-greyelement icon-user"></i>Zaloguj sie</a></li>
+								    <li class="grey"><a href="#"><i class="icon-lock"></i>Zarejestruj sie</a></li>
+								    <li class="grey"><a href="#"><i class="icon-globe"></i>Sprawdź status zamówienia</a></li>
+								    <li class="grey"><a href="#"><i class="icon-phone"></i>+48 78681822</a></li>
+								    <li class="grey"><a href="#"><i class="icon-mail-alt"></i>bok@armodo.pl</a></li>
+								    <li class="grey"><a href="#"><img src="flag.svg" alt="flaga">0,00 zł | 0,00 zł</a></li>
+							  	</div>
+							</div>
+					 	</div>
+					 </ul>
+				</nav>
+			</div>
+						    	
+			
+			<div class="rabat_back_red">
+				<div class="rabat">
+					<div class="text1 col-12 col-lg-12 text-center" style="order:1;">
+							<span class="red">-20 na całą kolekcje zimową!</span>
+					</div>	
+				</div>
+			</div>
+			<div class="rabat_back_black">
+				<div class="rabat">
+					<div class="text1 col-10 col-lg-12 text-cente" style="order:2;">
+							<span class="black"><a href=""><i class="fas fa-shipping-fast"></i>darmowa dostawa</a></span>
+							<span class="black"><a href=""><i class="fas fa-sync-alt"></i>30 dni na zwrot</a></span>
+							<span class="black"><a href=""><i class="fas fa-percent"></i>10% na pierwsze zakupy</a></span>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+
+	</header>
 
 	<div class="produkt_img">
 		<div class="container">
@@ -112,26 +358,39 @@
 							<span><i class="far fa-clock"></i></span>
 							<span>Zamów dziś, wyślemy w czwartek</span>
 						</div>
-						<form onsubmit="buttonfunction()">
-						<div class="select">
-							
-								<select name="rozmiar" id="wybrozmiar">
-									<option selected value="0">Wybierz rozmiar</option>
-									<option value="1"><i class="fas fa-circle"></i> Rozmiar: 38 | Dostpne</option>
-									<option value="2"><i class="fas fa-circle"></i> Rozmiar: 37 | Dostpne</option>
-									<option value="3"><i class="fas fa-circle"></i> Rozmiar: 39 | Dostpne</option>
-								</select>
-							<div class="select_arrow">
-						    </div>
-						</div>
-						<div class="tabela_rozmiarow">
-							<i class="fas fa-arrows-alt-h"></i>
-							<span><a href="">Tabela rozmiarów</a></span>
-						</div>
-						<div class="dodaj_koszyk">
-							<input type="submit" value="dodaj do koszyka" ></form>
+						<form id="zakup_form">
+							<div class="select">
+									<select name="rozmiar" id="wybrozmiar">
+										<option selected value="0">Wybierz rozmiar</option>
+										<option value="1"><div><i class="icon-circle"></i> Rozmiar: 38 | Dostpne</div></option>
+										<option value="2"><i class="icon-circle"></i> Rozmiar: 37 | Dostpne</option>
+										<option value="3"><i class="icon-circle"></i> Rozmiar: 39 | Dostpne</option>
+									</select>
+
+								<div class="select_arrow">
+							    </div>
+							</div>
+							<div class="tabela_rozmiarow">
+								<i class="fas fa-arrows-alt-h"></i>
+								<span><a href="">Tabela rozmiarów</a></span>
+							</div>
+							<div class="dodaj_koszyk">
+								<input value="Dodaj do koszyka" type="submit" id="myBtn">
+								<div id="myModal" class="modal">
+								  <div class="modal-content">
+								    <span class="close">&times;</span>
+								    <p>Proszę wybrać rozmiar jaki chciałbyś kupić</p>
+								  </div>
+								</div>
+								<div id="myModal2" class="modal">
+								  <div class="modal2-content">
+								    <span class="close2">&times;</span>
+								    <p class="loader">Loading..</p>
+								  </div>
+								</div>
+							</div>
+						</form>
 							<i class="far fa-heart"></i>
-						</div>
 						
 						<div class="info_zamowienie">
 							<div>
@@ -175,7 +434,7 @@
 <div class="produkt_szczegoly">
 	<div class="container">
 		<div class="row">
-			<div class="col-10 col-lg-4 tabela_opis_produkt">
+			<div class="col-12 col-lg-4 tabela_opis_produkt">
 				<table>
 					<tbody>
 						<tr>
@@ -261,29 +520,49 @@
 						<div class="kolory_element1 ak1">
 							<span >dobierz niezbędne akcesoria</span>
 						</div>
-						<div class="block_carousel col-lg-9">
+						<div class="block_carousel col-lg-12 col-10">
 				
 							<div class="next4"><i class="fas fa-chevron-left prev3_left"></i></div>
-							<div class="shoes multiple-items3 ">
-								<div class="items">
-									<a href=""><img src="zdj_prod/wkladka.svg" class="img-fluid" alt="shoes3"></a>
-									<div class="span1 akcesoria"><span>Wkładki do butów - Lateks Aloe Vera</span></div>
-									<div class="span3"><span>8,50 zł</span></div>
+							<div class="akcesoria_carousel multiple-items3 col-lg-11">
+
+								<div class="akcesoria_carousel_element">
+									<div class="items">
+										<a href=""><img src="zdj_prod/wkladka.svg" class="img-fluid" alt="shoes3"></a>
+									</div>
+									<div class="opis_akcesoria">
+										<div class="span1 akcesoria"><span>Wkładki do butów - Lateks Aloe Vera</span></div>
+										<div class="span3"><span>8,50 zł</span></div>
+									</div>	
 								</div>
-								<div class="items">
-									<a href=""><img src="zdj_prod/spray.svg" class="img-fluid" alt="shoes2"></a>
-									<div class="span1 akcesoria"><span>ANTIACQUA - COCCINE bezbarwny impregnat w sprayu</span></div>
-									<div class="span3"><span>8,50 zł</span></div>
+
+								<div class="akcesoria_carousel_element">
+									<div class="items">
+										<a href=""><img src="zdj_prod/spray.svg" class="img-fluid" alt="shoes2"></a>
+									</div>
+									<div  class="opis_akcesoria">
+										<div class="span1 akcesoria"><span>ANTIACQUA - COCCINE bezbarwny impregnat w sprayu</span></div>
+										<div class="span3"><span>8,50 zł</span></div>
+									</div>
 								</div>
-								<div class="items">
-									<a href=""><img src="zdj_prod/wkladka.svg" class="img-fluid" alt="shoes3"></a>
-									<div class="span1 akcesoria"><span>Wkładki do butów - Lateks Aloe Vera</span></div>
-									<div class="span3"><span>8,50 zł</span></div>
+
+								<div class="akcesoria_carousel_element">
+									<div class="items">
+										<a href=""><img src="zdj_prod/wkladka.svg" class="img-fluid" alt="shoes3"></a>
+									</div>
+									<div  class="opis_akcesoria">
+										<div class="span1 akcesoria"><span>Wkładki do butów - Lateks Aloe Vera</span></div>
+										<div class="span3"><span>8,50 zł</span></div>
+									</div>
 								</div>
-								<div class="items">
-									<a href=""><img src="zdj_prod/spray.svg" class="img-fluid" alt="shoes2"></a>
-									<div class="span1 akcesoria"><span>ANTIACQUA - COCCINE bezbarwny impregnat w sprayu</span></div>
-									<div class="span3"><span>8,50 zł</span></div>
+
+								<div class="akcesoria_carousel_element">
+									<div class="items">
+										<a href=""><img src="zdj_prod/spray.svg" class="img-fluid" alt="shoes2"></a>
+									</div>
+									<div  class="opis_akcesoria">
+										<div class="span1 akcesoria"><span>ANTIACQUA - COCCINE bezbarwny impregnat w sprayu</span></div>
+										<div class="span3"><span>8,50 zł</span></div>
+									</div>
 								</div>
 							</div>
 							<div class="prev4"><i class="fas fa-chevron-right prev3_right"></i></div>
@@ -399,147 +678,153 @@
 </div>
 
 <div class="container_opinie">
-	<div class="container col-lg-4">
-		<div class="opinie_klientow margin">
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<span>4.5</span>
-		</div>
-		<div class="margin"><span>Liczba wystawionych opini:7</span></div>
-		<div class="row col-12 opinie_paski">
-			<div class="side">
-			    <div>5</div>
-			</div>
-			<div><i class="fas fa-star"></i></div>
-			<div class="middle">
-			    <div class="bar-container">
-			      <div class="bar-5"></div>
-		    	</div>
-			</div>
-			<div class="side right_opinie">
-				   <div>(21)</div>
-			</div>
-			
-			<div class="side">
-			    <div>4</div>
-			</div>
-			<div><i class="fas fa-star"></i></div>
-			<div class="middle">
-			    <div class="bar-container">
-			      <div class="bar-4"></div>
-		    	</div>
-			</div>
-			<div class="side right_opinie">
-				   <div>(5)</div>
-			</div>
+	<div class="container col-lg-12">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="opinie_klientow margin col">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<span>4.5</span>
+				</div>
+				<div class="margin"><span>Liczba wystawionych opini:7</span></div>
+				<div class="row col-12 opinie_paski">
+					<div class="side">
+					    <div>5</div>
+					</div>
+					<div><i class="fas fa-star"></i></div>
+					<div class="middle">
+					    <div class="bar-container">
+					      <div class="bar-5"></div>
+				    	</div>
+					</div>
+					<div class="side right_opinie">
+						   <div>(21)</div>
+					</div>
+					
+					<div class="side">
+					    <div>4</div>
+					</div>
+					<div><i class="fas fa-star"></i></div>
+					<div class="middle">
+					    <div class="bar-container">
+					      <div class="bar-4"></div>
+				    	</div>
+					</div>
+					<div class="side right_opinie">
+						   <div>(5)</div>
+					</div>
 
-			<div class="side">
-			    <div>3</div>
-			</div>
-			<div><i class="fas fa-star"></i></div>
-			<div class="middle">
-			    <div class="bar-container">
-			      <div class="bar-3"></div>
-		    	</div>
-			</div>
-			<div class="side right_opinie">
-				   <div>(0)</div>
-			</div>
+					<div class="side">
+					    <div>3</div>
+					</div>
+					<div><i class="fas fa-star"></i></div>
+					<div class="middle">
+					    <div class="bar-container">
+					      <div class="bar-3"></div>
+				    	</div>
+					</div>
+					<div class="side right_opinie">
+						   <div>(0)</div>
+					</div>
 
-			<div class="side">
-			    <div>2</div>
-			</div>
-			<div><i class="fas fa-star"></i></div>
-			<div class="middle">
-			    <div class="bar-container">
-			      <div class="bar-3"></div>
-		    	</div>
-			</div>
-			<div class="side right_opinie">
-				   <div>(0)</div>
-			</div>
+					<div class="side">
+					    <div>2</div>
+					</div>
+					<div><i class="fas fa-star"></i></div>
+					<div class="middle">
+					    <div class="bar-container">
+					      <div class="bar-3"></div>
+				    	</div>
+					</div>
+					<div class="side right_opinie">
+						   <div>(0)</div>
+					</div>
 
-			<div class="side">
-			    <div>1</div>
+					<div class="side">
+					    <div>1</div>
+					</div>
+					<div><i class="fas fa-star"></i></div>
+					<div class="middle">
+					    <div class="bar-container">
+					      <div class="bar-1"></div>
+				    	</div>
+					</div>
+					<div class="side right_opinie">
+						   <div>(1)</div>
+					</div>
+				</div>	
+				<div class="dodaj_koszyk opinia">
+					<input type="submit" value="dodaj swoją opinie">
+				</div>	
 			</div>
-			<div><i class="fas fa-star"></i></div>
-			<div class="middle">
-			    <div class="bar-container">
-			      <div class="bar-1"></div>
-		    	</div>
-			</div>
-			<div class="side right_opinie">
-				   <div>(1)</div>
-			</div>
-		</div>	
-		<div class="dodaj_koszyk opinia">
-			<input type="submit" value="dodaj swoją opinie">
-		</div>	
-	</div>
 
 	
 
-	<div class="opinie_klientow_towary margin">
-		<div class="container col-8">
-			<div>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<span>5/5</span>
-			</div>
-			<div>
-				<p>Towar zgodny z opisem. Szybka wysyłka. Gorąco polecam.</p>
-			</div>
-			<div class="color_grey">
-				<div class="wera">
-					<p>Wera, Szczecin, Polska</p>
+			<div class="opinie_klientow_towary margin col-lg-7">
+				<div class="container">
+					<div>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<span>5/5</span>
+					</div>
+					<div>
+						<p>Towar zgodny z opisem. Szybka wysyłka. Gorąco polecam.</p>
+					</div>
+					<div class="color_grey">
+						<div class="wera">
+							<p>Wera, Szczecin, Polska</p>
+						</div>
+						<div class="row kciuki">
+							<p>Czy ta opinia była pomocna?</p>
+							<i class="icon-thumbs-up-alt kciuk"></i>
+							<span>Tak (3)</span>
+							<i class="icon-thumbs-down kciuk"></i>
+							<span>Nie (0)</span>
+						</div>
+					</div>
 				</div>
-				<div class="row">
-					<p>Czy ta opinia była pomocna?</p>
-					<i class="icon-thumbs-up-alt"></i>
-					<span>Tak (3)</span>
-					<i class="icon-thumbs-down"></i>
-					<span>Nie (0)</span>
+				<div class="container">
+					<div>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<span>5/5</span>
+					</div>
+					<div>
+						<p>Wszystko w porządku!</p>
+					</div>
+					<div class="color_grey">
+						<div class="wera">
+							<p>Bartłomiej, Opole, Polska</p>
+						</div>
+						<div class="row ">
+							<p>Czy ta opinia była pomocna?</p>
+							<i class="icon-thumbs-up-alt"></i>
+							<span>Tak (3)</span>
+							<i class="icon-thumbs-down"></i>
+							<span>Nie (0)</span>
+						</div>
+					</div>
 				</div>
+				
 			</div>
-		</div>
-		<div class="container">
-			<div>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<span>5/5</span>
-			</div>
-			<div>
-				<p>Wszystko w porządku!</p>
-			</div>
-			<div class="color_grey">
-				<div class="wera">
-					<p>Bartłomiej, Opole, Polska</p>
-				</div>
-				<div class="row">
-					<p>Czy ta opinia była pomocna?</p>
-					<i class="icon-thumbs-up-alt"></i>
-					<span>Tak (3)</span>
-					<i class="icon-thumbs-down"></i>
-					<span>Nie (0)</span>
-				</div>
-			</div>
-		</div>
-		<div class="wszystkie_opinie">
-			<div class="row">
-				<a href="">Pokaż wszystkie opinie</a>
+			<div class="wszystkie_opinie">
+					<div class="row">
+						<a href="">Pokaż wszystkie opinie</a>
+					</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 
 <div class="block_carousel">
 	<div class="container">
@@ -547,7 +832,7 @@
 			<div class="text1 col-10 col-lg-12 text-center">
 				<p class="rabat_text1">SPODOBAJĄ CI SIE RÓWNIEŻ</p>
 			</div>
-			<div class="next"><i class="fas fa-chevron-left prev3_left"></i></div>
+			<div class="next_produkt"><i class="fas fa-chevron-left prev3_left"></i></div>
 			<div class="shoes multiple-items col-lg-10">
 				<div class="items">
 					<a href=""><img src="shoes2.svg" class="img-fluid" alt="shoes2"></a>
@@ -586,7 +871,7 @@
 					<div class="span3"><span>289,00 zł</span></div>
 				</div>
 			</div>
-			<div class="prev"><i class="fas fa-chevron-right prev3_right"></i></div>
+			<div class="prev_produkt"><i class="fas fa-chevron-right prev3_right"></i></div>
 		</div>
 	</div>
 </div>
@@ -669,12 +954,192 @@
 			</div>
 		</div>
 	</div>
-
-
-	
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   	
-  	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+  	<script>
+  		$(document).ready(function(){
+
+			$('.drop').click(function() {
+				$(this).children('ul').slideToggle();
+			});
+				
+			$('.slider2').slick({
+				arrows: true,
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				nextArrow: $('.next6'),
+				prevArrow: $('.prev6'),
+				responsive: [
+				{
+					breakpoint: 600,
+					settings: 
+					{
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				{
+					breakpoint: 900,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				]
+			});
+		 
+			$('.slider-for').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				fade: true,
+				asNavFor: '.slider-nav',
+				nextArrow: $('.next5'),
+				prevArrow: $('.prev5'),
+			});
+		
+			$('.slider-nav').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				asNavFor: '.slider-for',
+				dots: false,
+				vertical: true,
+				centerMode: true,
+				focusOnSelect: true,
+				adaptiveHeight: true,
+				arrows: true,
+				nextArrow: $('.next2'),
+				prevArrow: $('.prev2'),
+			});
+
+			$('.multiple-items2').slick({
+				arrows: true,
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: false,
+				nextArrow: $('.next3'),
+				prevArrow: $('.prev3'),
+				responsive: [
+				{
+					breakpoint: 600,
+					settings: 
+					{
+						arrows: false,
+						slidesToShow: 1.8,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				{
+					breakpoint: 900,
+					settings: 
+					{
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				]
+			});
+			
+			$('.multiple-items3').slick({
+				arrows: true,
+				infinite: true,
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				autoplay: false,
+				nextArrow: $('.next4'),
+				prevArrow: $('.prev4'),
+				responsive: [
+				{
+					breakpoint: 600,
+					settings: {
+						arrows: false,
+						slidesToShow: 1.8,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				{
+					breakpoint: 900,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				]
+			});
+
+			$('.multiple-items').slick({
+				arrows: true,
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: false,
+				nextArrow: $('.next_produkt'),
+				prevArrow: $('.prev_produkt'),
+				responsive: [
+				{
+					breakpoint: 600,
+					settings: {
+						arrows: false,
+						slidesToShow: 1.8,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				{
+					breakpoint: 900,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+					}
+				},
+				]
+			});
+					
+			 				
+  /*mobile nav*/
+ $('.hamburger').click(function() {
+  $('.hamburger').toggleClass('active');
+  $('.hamburger').toggleClass('changeplacebutton');
+  $('.navbar-menu').toggleClass('active');
+});
+ $('.damskie').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+
+ $('.damskie_item').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+ $('.meskie').click(function() {
+				    $(this).children('ul').slideToggle();
+				  });
+
+		});	
+			
+	</script>
+	<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar-menu");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

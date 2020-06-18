@@ -12,7 +12,6 @@ body
 	width: 100%;
   	margin-right: 0;
   	margin-left: 0;
-  	height: auto;
   	/*padding-right: 15px;
   	padding-left: 15px;*/
   	background: white;
@@ -209,7 +208,6 @@ li a
 .shoes
 {
 	width: 100%;
-	height: auto;
 }
 .row .shoes .slick-arrow
 {
@@ -237,7 +235,6 @@ li a
 .span3
 {
 	padding-top: 6%;
-	padding-bottom: 5%;
 	font-size: 15px;
 	font-weight: bold;
 }
@@ -256,7 +253,6 @@ li a
 }
 .multiple-items2
 {
-	height: 50%;
 	padding-bottom: 20%;
 }
 
@@ -596,9 +592,249 @@ li a
 }
 
 /*karta produktu*/
-.promo
-{
+.debugger {
+	position: absolute;
+	left: 50%;
+	top: 0;
+}
 
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.nav-wrapper {
+	position: relative;
+	width: 300px;
+	height: 100vh;
+	transition: transform 0.3s;
+	transform: translateX(-100%);
+	z-index: 999999;
+	
+	&.show-menu {
+		transform: none;
+	}
+}
+
+.js-nav-toggle {
+	position: absolute;
+	top: 0;
+	right: -60px;
+	width: 43px;
+	height: 40px;
+	margin: 15px 0 0 15px;
+	display: block;
+	float: left;
+	padding: 0;
+	color: #345;
+	border: 2px solid #345;
+	z-index: 2;
+	
+	span {
+		position: relative;
+		background-color: #345;
+		height: 2px;
+		display: block;
+		width: 22px;
+		margin: 17px auto 0;
+		transition: all 0.4s;
+		transition-delay: 0.3s;
+		
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 0;
+			left: 1px;
+			top: 50%;
+			margin-top: -7px;
+			transition: all 0.3s 0.3s;
+		}
+		
+		&:before {
+			box-shadow: 0 14px 0 1px #345;
+		}
+		
+		&:after {
+			box-shadow: 0 0 0 1px #345;
+		}
+		
+		.show-menu & {
+			background-color: transparent;
+			
+			&:before {
+				transform: rotate(-45deg);
+			}
+
+			&:after {
+				transform: rotate(45deg);
+			}
+			
+			&:before,
+			&:after {
+				margin-top: 0;
+    		box-shadow: 0 0 0 1px #345;
+			}
+		}
+	}
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-shadow: 0 0 5px 1px #ddd;
+	background-color: #fafafa;
+	
+	.nav-toggle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 0.45em 0.6em;
+		background-color: #456;
+		color: #fff;
+		z-index: 100;
+		cursor: pointer;
+		transition: backgroun-color 0.2s;
+		
+		&:hover {
+			background-color: #345;
+		}
+		
+		&.back-visible {
+			
+			.nav-back {
+				opacity: 1;
+			}
+			
+			.nav-title {
+				transform: translateX(40px);
+			}
+		}
+	}
+	
+	.nav-title {
+		position: absolute;
+		left: 0;
+		top: 0.8em;
+		padding-left: 0.7em;
+		transition: transform 0.3s;
+	}
+	
+	.nav-back {
+		display: inline-block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		z-index: 1;
+		opacity: 0;
+		transition: opacity 0.2s;
+		
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+		}
+		
+		&:before {
+			left: 50%;
+			width: 9px;
+			height: 9px;
+			border: 2px solid currentcolor;
+			border-right-color: transparent;
+			border-bottom-color: transparent;
+			transform: translate(-50%, -50%) rotateZ(-45deg);
+		}
+		
+		&:after {
+			left: 28%;
+			width: 15px;
+			height: 2px;
+			background-color: currentcolor;
+			margin-top: -1px;
+		}
+	}
+	
+	.nav-close {
+		
+	}
+	
+	a {
+		display: block;
+		position: relative;
+		padding: 0.7em;
+		border-bottom: 1px solid #eee;
+		color: #999;
+		text-decoration: none;
+		transition: color 0.15s, background-color 0.15s;
+		
+		&:hover {
+			color: #333;
+			background-color: #efefef;
+		}
+	}
+	
+	ul {
+		list-style: none;
+		padding: 45px 0 0;
+		transition: transform 0.3s;
+		background-color: #fafafa;
+    position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+    width: 100%;
+		
+		ul {
+			display: none;
+			left: 100%;
+		}
+	}
+	
+	li {
+		
+		&.has-dropdown {
+			
+			> a {
+				padding-right: 2.5em;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					right: 1em;
+					width: 9px;
+					height: 9px;
+					border: 1px solid currentcolor;
+					border-left-color: transparent;
+					border-top-color: transparent;
+					transform: translateY(-90%) rotateZ(-45deg);
+					transition: transform 0.3s;
+					transform-origin: 100%;
+				}
+			}
+		}
+		
+		&.nav-dropdown-open {
+			
+			ul {
+				display: block;
+			}
+		}
+	}
 }
 .promo1, .promo2
 {
@@ -1097,15 +1333,6 @@ td a
   }
 }
 
-
-
-/*modal wybrane dla ciebie*/
-
-.show_wybrane
-{
-	visibility: hidden;
-}
-
 @media (min-width: 600px)
 {
 	.rabat_back_red
@@ -1440,6 +1667,7 @@ input[type=search] {
 	margin: 20px auto;
 	order: 4;
 	position: absolute;
+	display: none;
 }
 
 nav
@@ -1713,14 +1941,6 @@ nav ul li
 	font-size: 15px;
 }
 
-.multiple-items2 .items .span1
-{
-	font-size: 15px;
-}
-.multiple-items2 .items .span2
-{
-	font-size: 12px;
-}
 .produkt_szczegoly .container .row table
 {
 	width: 100%;
@@ -1811,10 +2031,7 @@ table
 {
 	width: 109px;
 }
-.opis_akcesoria .akcesoria span
-{
-	width: 
-}
+
 .multiple-items3 .slick-list .slick-track .items
 {
 	width: 109px;
@@ -2050,6 +2267,7 @@ table
 	padding-top: 15%;
 
 }
+
 .promo
 {
 	display: block;
@@ -2061,108 +2279,6 @@ table
 .damskie_item_name
 {
 	font-weight: bold;
-}
-
-
-/*modal wybrane*/
-
-.show_wybrane{
-  position: absolute;
-  width: 150px;
-  margin-left: -75px;
-  background: black;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  z-index: 9999;
-
-  }
-  .show_wybrane:active{
-    transform: scale(0.9);
-  }
-
-/* Close Button*/
-
-.close_wybrane{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 35px;
-  height: 30px;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-}
-
-/* The mask*/
-
-.mask_wybrane{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  z-index: 50;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.7s;
-}
-
-/*Modal*/
-
-.modal_wybrane{
-  position: fixed;
-  top: 30%;
-  left: 25%;
-  width: 80%;
-  height: 50%;
-  margin-left: -200px;
-  margin-top: -150px;
-
-  z-index: 100;
-  visibility: hidden;
-  
-  opacity: 0;
-  
-  transition: 0.5s ease-out;
-  
-  transform: translateY(45px);
-}
-
-.items:hover .show_wybrane
-{
-	visibility: visible;
-}
-/*Class Active*/
-
-.active{
-  visibility: visible;
-  opacity: 1;
-}
-
-/* When active class is added, that affects the modal class*/
-
-.active + .modal_wybrane{
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.modal-wybrane i
-{
-	left: 7%;
-	position: absolute;
-	padding-top: 17%;
-	color: black;
-	font-size: 250%;
-}
-.modal_wybrane .produkt_img .container
-{
-	padding-top: 3%;
 }
 }
 

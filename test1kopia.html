@@ -7,48 +7,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 	<script src="less.js" type="text/javascript"></script>
 	<link rel="stylesheet/less" href="styless.css">
-	<link rel="stylesheet" href="css/stylekopia.css">
+	<link rel="stylesheet" href="css/stylekopiakopia.css">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 	<!--slider-->
 	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
   	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   	<!--fontello-->
   	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
 	<script src="https://kit.fontawesome.com/72132bb0f5.js" crossorigin="anonymous"></script>
-
-	<script type="text/javascript">
-
-		$(document).ready(function(){
-		// Click function for show the Modal
-
-$(".show_wybrane").on("click", function(){
-  $(".mask_wybrane").addClass("active");
-});
-
-// Function for close the Modal
-
-function closeModal(){
-  $(".mask_wybrane").removeClass("active");
-}
-
-// Call the closeModal function on the clicks/keyboard
-
-$(".close_wybrane, .mask_wybrane").on("click", function(){
-  closeModal();
-});
-
-$(document).keyup(function(e) {
-  if (e.keyCode == 27) {
-    closeModal();
-  }
-});
-
-$.getScript('js/scriptJS.js');
-});	
-	</script>
 </head>
 <body>
 	<header>
@@ -101,180 +69,142 @@ $.getScript('js/scriptJS.js');
 				</div>
 			</div>
 
-			<div class="wrapper">
-				<nav class="navbar-menu">
-				  	<ul class="menu-listing">
-					  	<div class="container">
-				    		<div class="row">
-								<li class="damskie col-lg-1"><a href="#" class="nav-hover">Damskie<i class="icon-right-open flex-end"></i></a>
-								<ul class="damskie_dropdown">
-									<div class="col-lg-7 rodzaje-baner-menu">
-									<div class="div_rodzaje col-lg-7">
-										<div class="div_dwie col-lg-4 col-10">
-										<li class="damskie_item"><a href="#" class="damskie_item_name">botki i kozaki</a>
-											<ul class="damskie_item_down">
-												<li><a href="">Botki</a></li>
-					      						<li><a href="">Glany</a></li>
-					      						<li><a href="">Kowbojki</a></li>
-					      						<li><a href="">Kozaki</a></li>
-					      						<li><a href="">Muszkieterki</a></li>
-					      						<li><a href="">Oficerki</a></li>
-					      						<li><a href="">Śniegowce</a></li>
-					      						<li><a href="">Sztyblety</a></li>
-					      						<li><a href="">Trekingi i trapery</a></li>
-											</ul>
+			<div class="nav-wrapper">
+		<a href="#" class="js-nav-toggle">
+				<span></span>
+		</a>
+		<nav role="navigation">
+				<div class="nav-toggle">
+						<span class="nav-back"></span>
+						<span class="nav-title">Menu</span>
+						<span class="nav-close"></span>
+				</div>
+				<ul>
+						<li class="has-dropdown">
+								<a href="#">Damskie</a>
+								<ul>
+										<li class="has-dropdown">
+												<a href="#">BOTKI I KOZAKI</a>
+												<ul>
+														<li><a href="#">Botki</a></li>
+														<li><a href="#">Glany</a></li>
+														<li><a href="#">Kowbojki</a></li>
+														<li><a href="#">Kozaki</a></li><li><a href="#">Muszkiterki</a></li><li><a href="#">Oficerki</a></li>
+														<li><a href="#">Śniegowce</a></li>
+														<li><a href="#">Sztyblety</a></li>
+														<li><a href="#">Trekkingi i trapery</a></li>
+												</ul>
 										</li>
-										<li class="damskie_item"><a href="#" class="damskie_item_name">klapki i sandały</a>
-											<ul class="damskie_item_down">
-												<li><a href="">Klapki</a></li>
-												<li><a href="">Sandały</a></li>
-											</ul>
+										<li><a href="#">KLAPKI I SANDAŁY</a>
+												<ul>
+														<li><a href="#">Klapki</a></li>
+														<li><a href="#">Sandały</a></li>
+												</ul>
 										</li>
-										</div>
-										<div classs="polbuty-menu" style="width: 130px;">
-										<li class="damskie_item"><a href="#" class="damskie_item_name">półbuty</a>
-											<ul class="damskie_item_down">
-												<li><a href="">Baleriny</a></li>
-					      						<li><a href="">Czyłenka</a></li>
-					      						<li><a href="">Espadryle</a></li>
-					      						<li><a href="">Lordsy</a></li>
-					      						<li><a href="">Mokasyny</a></li>
-					      						<li><a href="">Na</a></li>
-					      						<li><a href="">Koturnie</a></li>
-					      						<li><a href="">Na</a></li>
-					      						<li><a href="">Obcasie</a></li>
-					      						<li><a href="">Oxfordy</a></li>
-					      						<li><a href="">Płaskie</a></li>
-											</ul>
+										<li><a href="#">PÓŁBUTY</a>
+												<ul>
+														<li><a href="#">Baleriny</a></li>
+														<li><a href="#">Czółenka</a></li>
+														<li><a href="#">Espadryle</a></li>
+														<li><a href="#">Lordsy</a></li>
+														<li><a href="#">Mokasyny</a></li>
+														<li><a href="#">Na</a></li>
+														<li><a href="#">Kotrunie</a></li>
+														<li><a href="#">Na</a></li>
+														<li><a href="#">Obcasie</a></li>
+														<li><a href="#">Oxfordy</a></li>
+														<li><a href="#">Płaskie</a></li>
+												</ul>
 										</li>
-										</div>
-										<div class="col-lg-3 marki-menu">				<li class="damskie_item"><a href="#" class="damskie_item_name">marki</a>
-											<ul class="damskie_item_down">
-												<li><a href="">Nessi</a></li>
-												<li><a href="">Tamaris</a></li>
-												<li><a href="">Gino rossi</a></li>
-												<li><a href="">Carinii</a></li>
-												<li><a href="">Karino</a></li>
-												<li><a href="">Nessi</a></li>
-												<li><a href="">Tamaris</a></li>
-												<li><a href="">Gino rossi</a></li>
-												<li><a href="">Carinii</a></li>
-												<li><a href="">Karino</a></li>
-												<li><a href="" class="underline">wszytskie marki</a></li>
-											</ul>
+										<li><a href="#">MARKI</a>
+												<ul>
+														<li><a href="#">Nessi</a></li>
+														<li><a href="#">Tamaris</a></li>
+														<li><a href="#">Gino rossi</a></li>
+														<li><a href="#">Carinii</a></li>
+														<li><a href="#">Karino</a></li>
+														<li><a href="#">Nesii</a></li>
+														<li><a href="#">Tamaris</a></li>
+														<li><a href="#">Gino rossi</a></li>
+														<li><a href="#">Carinii</a></li>
+														<li><a href="#">Karino</a></li>
+												</ul>
 										</li>
-									</div>
-									</div>
-									<div class="col-lg-5 baner-menu">
-										<div class="col-lg-11">
-											<img src="baner.svg" class="img-fluid" alt="baner reklamowy">
-										</div>
-										<div class="under-baner-menu">
-									
-											<div><a href=""><span class="damskie_item_name">Nowości</span></a></div>
-											<div><a href=""><span class="damskie_item_name">Wyprzedaż</span></a></div>
-											<div><a href=""><span class="damskie_item_name">Bestsellery</span></a></div>
-										
-										</div>
-									</div>
-								</div>
 								</ul>
-								</li>
-
-							    <li class="meskie col-lg-1"><a href="#" class="nav-hover">Meskie<i class="icon-right-open 	flex-end"></i></a>
-									<ul class="meskie_dropdown">
-										<div class="col-lg-7 rodzaje-baner-menu">
-										<div class="div_rodzaje col-lg-7">
-											<div class="div_dwie col-lg-4 col-10">
-											<li class="damskie_item"><a href="#" class="damskie_item_name">botki i kozaki</a>
-												<ul class="damskie_item_down">
-													<li><a href="">Botki</a></li>
-						      						<li><a href="">Glany</a></li>
-						      						<li><a href="">Kowbojki</a></li>
-						      						<li><a href="">Kozaki</a></li>
-						      						<li><a href="">Muszkieterki</a></li>
-						      						<li><a href="">Oficerki</a></li>
-						      						<li><a href="">Śniegowce</a></li>
-						      						<li><a href="">Sztyblety</a></li>
-						      						<li><a href="">Trekingi i trapery</a></li>
+						</li>
+						<li class="has-dropdown">
+								<a href="#">Meskie</a>
+								<ul>
+										<li class="has-dropdown">
+												<a href="#">BOTKI I KOZAKI</a>
+												<ul>
+														<li><a href="#">Botki</a></li>
+														<li><a href="#">Glany</a></li>
+														<li><a href="#">Kowbojki</a></li>
+														<li><a href="#">Kozaki</a></li><li><a href="#">Muszkiterki</a></li><li><a href="#">Oficerki</a></li>
+														<li><a href="#">Śniegowce</a></li>
+														<li><a href="#">Sztyblety</a></li>
+														<li><a href="#">Trekkingi i trapery</a></li>
 												</ul>
-											</li>
-											<li class="damskie_item"><a href="#" class="damskie_item_name">klapki i sandały</a>
-												<ul class="damskie_item_down">
-													<li><a href="">Klapki</a></li>
-													<li><a href="">Sandały</a></li>
+										</li>
+										<li><a href="#">KLAPKI I SANDAŁY</a>
+												<ul>
+														<li><a href="#">Klapki</a></li>
+														<li><a href="#">Sandały</a></li>
 												</ul>
-											</li>
-											</div>
-											<div classs="polbuty-menu" style="width: 130px;">
-											<li class="damskie_item"><a href="#" class="damskie_item_name">półbuty</a>
-												<ul class="damskie_item_down">
-													<li><a href="">Baleriny</a></li>
-						      						<li><a href="">Czyłenka</a></li>
-						      						<li><a href="">Espadryle</a></li>
-						      						<li><a href="">Lordsy</a></li>
-						      						<li><a href="">Mokasyny</a></li>
-						      						<li><a href="">Na</a></li>
-						      						<li><a href="">Koturnie</a></li>
-						      						<li><a href="">Na</a></li>
-						      						<li><a href="">Obcasie</a></li>
-						      						<li><a href="">Oxfordy</a></li>
-						      						<li><a href="">Płaskie</a></li>
+										</li>
+										<li><a href="#">PÓŁBUTY</a>
+												<ul>
+														<li><a href="#">Baleriny</a></li>
+														<li><a href="#">Czółenka</a></li>
+														<li><a href="#">Espadryle</a></li>
+														<li><a href="#">Lordsy</a></li>
+														<li><a href="#">Mokasyny</a></li>
+														<li><a href="#">Na</a></li>
+														<li><a href="#">Kotrunie</a></li>
+														<li><a href="#">Na</a></li>
+														<li><a href="#">Obcasie</a></li>
+														<li><a href="#">Oxfordy</a></li>
+														<li><a href="#">Płaskie</a></li>
 												</ul>
-											</li>
-											</div>
-											<div class="col-lg-3 marki-menu">				<li class="damskie_item"><a href="#" class="damskie_item_name">marki</a>
-												<ul class="damskie_item_down">
-													<li><a href="">Nessi</a></li>
-													<li><a href="">Tamaris</a></li>
-													<li><a href="">Gino rossi</a></li>
-													<li><a href="">Carinii</a></li>
-													<li><a href="">Karino</a></li>
-													<li><a href="">Nessi</a></li>
-													<li><a href="">Tamaris</a></li>
-													<li><a href="">Gino rossi</a></li>
-													<li><a href="">Carinii</a></li>
-													<li><a href="">Karino</a></li>
-													<li><a href="" class="underline">wszytskie marki</a></li>
+										</li>
+										<li><a href="#">MARKI</a>
+												<ul>
+														<li><a href="#">Nessi</a></li>
+														<li><a href="#">Tamaris</a></li>
+														<li><a href="#">Gino rossi</a></li>
+														<li><a href="#">Carinii</a></li>
+														<li><a href="#">Karino</a></li>
+														<li><a href="#">Nesii</a></li>
+														<li><a href="#">Tamaris</a></li>
+														<li><a href="#">Gino rossi</a></li>
+														<li><a href="#">Carinii</a></li>
+														<li><a href="#">Karino</a></li>
 												</ul>
-											</li>
-										</div>
-										</div>
-										<div class="col-lg-5 baner-menu">
-											<div class="col-lg-11">
-												<img src="baner.svg" class="img-fluid" alt="baner reklamowy">
-											</div>
-											<div class="under-baner-menu">
-										
-												<div><a href=""><span class="damskie_item_name">Nowości</span></a></div>
-												<div><a href=""><span class="damskie_item_name">Wyprzedaż</span></a></div>
-												<div><a href=""><span class="damskie_item_name">Bestsellery</span></a></div>
-											
-											</div>
-										</div>
-									</div>
-									</ul>
-							    </li>
-							    <li><a href="#" class="nav-hover">Torebki<i class="icon-right-open 	flex-end"></i></a></li>
-							    <li><a href="#" class="nav-hover">Akcesoria<i class="icon-right-open flex-end"></i></a></li>
-							    <li><a href="#" class="nav-hover">Premium<i class="icon-right-open flex-end"></i></a></li>
-							    <li><a href="#" class="nav-hover">Marki</a></li>
-							    <li><a href="#" class="nav-hover">Nowości</a></li>
-							    <li><a href="#" class="nav-hover">Wyprzedaż</a></li>
-							    <div class="mobile-menu">
-								    <li class="grey"><a href="#"><i class="mobile-menu-greyelement icon-user"></i>Zaloguj sie</a></li>
-								    <li class="grey"><a href="#"><i class="icon-lock"></i>Zarejestruj sie</a></li>
-								    <li class="grey"><a href="#"><i class="icon-globe"></i>Sprawdź status zamówienia</a></li>
-								    <li class="grey"><a href="#"><i class="icon-phone"></i>+48 78681822</a></li>
-								    <li class="grey"><a href="#"><i class="icon-mail-alt"></i>bok@armodo.pl</a></li>
-								    <li class="grey"><a href="#"><img src="flag.svg" alt="flaga">0,00 zł | 0,00 zł</a></li>
-							  	</div>
-							</div>
-					 	</div>
-					 </ul>
-				</nav>
-			</div>
-						    	
+										</li>
+								</ul>
+						</li>
+						<li>
+								<a href="#">Torebki</a>
+						</li>
+						<li>
+								<a href="#">Akcesoria</a>
+						</li>
+						<li>
+								<a href="#">Premium</a>
+						</li>
+						<li>
+								<a href="#">Marki</a>
+						</li>
+						<li>
+								<a href="#">Nowości</a>
+						</li>
+						<li>
+								<a href="#">Wyprzedaż</a>
+						</li>
+				</ul>
+		</nav>
+</div>
 			
 			<div class="rabat_back_red">
 				<div class="rabat">
@@ -376,69 +306,46 @@ $.getScript('js/scriptJS.js');
 				<div class="next3 col-lg-1"><i class="fas fa-chevron-left prev3_left"></i></div>
 				<div class="shoes multiple-items2 col-lg-10">
 					<div class="items">
-
 						<a href=""><img src="shoes1.svg" class="img-fluid" alt="shoes1"></a>
 						<div class="span1"><span>botki karino</span></div>
 						<div class="span2"><span>3019/076-f czarny </span></div>
 						<div class="span3"><span class="shoes_rabat_new">289,00 zł</span><span class="shoes_rabat">289,00 zł</span></div>
-						<div>
-							<button class="show_wybrane" data-product-id="1" aria-haspopup="true" >Dodaj do koszyka</button>
-						</div>
-
 					</div>
 					<div class="items">
 						<a href=""><img src="shoes2.svg" class="img-fluid" alt="shoes2"></a>
 						<div class="span1"><span>botki karino</span></div>
 						<div class="span2"><span>3019/076-f czarny </span></div>
 						<div class="span3"><span>289,00 zł</span></div>
-						<div>
-							<button class="show_wybrane" data-product-id="2" aria-haspopup="true">Dodaj do koszyka</button>
-						</div>
 					</div>
 					<div class="items">
 						<a href=""><img src="shoes3.svg" class="img-fluid" alt="shoes3"></a>
 						<div class="span1"><span>botki karino</span></div>
 						<div class="span2"><span>3019/076-f czarny </span></div>
 						<div class="span3"><span>289,00 zł</span></div>
-						<div>
-							<button class="show_wybrane" data-product-id="7" aria-haspopup="true">Dodaj do koszyka</button>
-						</div>
 					</div>
 					<div class="items">
 						<a href=""><img src="shoes4.svg" class="img-fluid" alt="shoes4"></a>
 						<div class="span1"><span>botki karino</span></div>
 						<div class="span2"><span>3019/076-f czarny </span></div>
 						<div class="span3"><span>289,00 zł</span></div>
-						<div>
-							<button class="show_wybrane" data-product-id="3" aria-haspopup="true">Dodaj do koszyka</button>
-						</div>
 					</div>
 					<div class="items">
 						<a href=""><img src="shoes1.svg" class="img-fluid" alt="shoes1"></a>
 						<div class="span1"><span>botki karino</span></div>
 						<div class="span2"><span>3019/076-f czarny </span></div>
 						<div class="span3"><span>289,00 zł</span></div>
-						<div>
-							<button class="show_wybrane" data-product-id="4" aria-haspopup="true">Dodaj do koszyka</button>
-						</div>
 					</div>
 					<div class="items">
 						<a href=""><img src="shoes2.svg" class="img-fluid" alt="shoes2"></a>
 						<div class="span1"><span>botki karino</span></div>
 						<div class="span2"><span>3019/076-f czarny </span></div>
 						<div class="span3"><span>289,00 zł</span></div>
-						<div>
-							<button class="show_wybrane" data-product-id="5" aria-haspopup="true">Dodaj do koszyka</button>
-						</div>
 					</div>
 					<div class="items">
 						<a href=""><img src="shoes3.svg" class="img-fluid" alt="shoes3"></a>
 						<div class="span1"><span>botki karino</span></div>
 						<div class="span2"><span>3019/076-f czarny </span></div>
 						<div class="span3"><span>289,00 zł</span></div>
-						<div>
-							<button class="show_wybrane" data-product-id="6" aria-haspopup="true">Dodaj do koszyka</button>
-						</div>
 					</div>
 				</div>
 				<div class="prev3"><i class="fas fa-chevron-right prev3_right"></i></div>
@@ -597,132 +504,6 @@ $.getScript('js/scriptJS.js');
 		</div>
 	</div>
 	
-
-
-	<!--modal wybrane dla ciebie-->
-
-<div class="mask_wybrane" role="dialog"></div>
-	<div class="modal_wybrane" role="alert">
-	  <button class="close_wybrane" role="button">X</button>
-	
-	<div class="produkt_img">
-		<div class="container">
-			<div class="row col-11 col-lg-8 width_produkt_img">
-				<div class="next5_modal-wybrane modal-wybrane"><i class="fas fa-chevron-left"></i></div>
-					<div class="slider-for col-10 col-lg-5">
-						
-
-						
-					</div>
-				<div class="prev5_modal-wybrane right"><i class="fas fa-chevron-right"></i></div>
-				
-				<div class="col-12 col-lg-4 promo">
-					<div class="promo1">
-						<span>promocja</span>
-					</div>
-					<div class="promo2">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="far fa-star"></i>
-						<span>4.5</span>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-7 cena_prod">
-					<div>
-						<span class="span1 name">botki karino</span>
-					</div>
-					<div>
-						<span class="span2">3019/076-F czarny</span>
-					</div>
-				</div>
-			</div>	
-			
-
-
-				<div class="col-12 col-lg-7 opis_prod_element1">
-					<div class="back_grey">
-						<div>
-							<span class="opis_prod_cena price">289,00 zł</span>
-						</div>
-						<div>
-							<span class="opis_prod_cena_old">321,00 zł</span>
-							<span class="opis_prod_cena_old_save">Oszczedzasz 10% (22,56 zł)</span>
-						</div>
-						<div class="time_deliver">
-							<span><i class="far fa-clock"></i></span>
-							<span>Zamów dziś, wyślemy w czwartek</span>
-						</div>
-						<form id="zakup_form">
-							<div class="select">
-									<select name="rozmiar" id="wybrozmiar">
-										<option selected value="0">Wybierz rozmiar</option>
-										<option value="1"><div></i> Rozmiar: 38 | Dostpne</div></option>
-										<option value="2"> Rozmiar: 37 | Dostpne</option>
-										<option value="3"> Rozmiar: 39 | Dostpne</option>
-									</select>
-
-								<div class="select_arrow">
-							    </div>
-							</div>
-							<div class="tabela_rozmiarow">
-								<i class="fas fa-arrows-alt-h"></i>
-								<span><a href="">Tabela rozmiarów</a></span>
-							</div>
-							<div class="dodaj_koszyk">
-								<input value="Dodaj do koszyka" type="submit" id="myBtn">
-								<div id="myModal" class="modal">
-								  <div class="modal-content">
-								    <span class="close">&times;</span>
-								    <p>Proszę wybrać rozmiar jaki chciałbyś kupić</p>
-								  </div>
-								</div>
-								<div id="myModal2" class="modal">
-								  <div class="modal2-content">
-								    <span class="close2">&times;</span>
-								    <p class="loader">Loading..</p>
-								  </div>
-								</div>
-							</div>
-						</form>
-							<i class="far fa-heart"></i>
-						
-						<div class="info_zamowienie">
-							<div>
-								<i class="fas fa-shipping-fast"></i>
-								<span>Darmowa dostawa</span>
-							</div>
-							<div>
-								<i class="fas fa-sync"></i>
-								<span>30 dni na zwrot</span>
-							</div>
-							<div>
-								<i class="fas fa-phone-alt"></i>
-								<span>Zamów telefonicznie</span>
-								<span class="zamow_tel">|</span>
-								<span>+48</span>
-							</div>
-						</div>
-					</div>
-					<div class="kolory">
-						<div class="col-12 text-center kolory_element1"><span>dostepne kolory</span></div>
-						<div class="col-4 kolory_element2 text-center">
-							<div>
-								<img src="zdj_prod/zdj2.svg" class="img-fluid" alt="zdjecie produkt 1">
-								<span>Czarny</span>
-							</div>
-							<div>
-								<img src="zdj_prod/zdj2.svg" class="img-fluid" alt="zdjecie produkt 1">
-								<span>Brązowy</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
 	<!--slider-->
 	<script>
 		$(document).ready(function(){
@@ -822,18 +603,7 @@ $.getScript('js/scriptJS.js');
 	                ]
 				});
 
-				$('.slider-for').slick({
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: true,
-				fade: true,
-				nextArrow: $('.next5_modal-wybrane'),
-				prevArrow: $('.prev5_modal-wybrane'),
-			});
-
-
-
-
+				
 $('.drop').click(function() {
 				    $(this).children('ul').slideToggle();
 				  });
@@ -843,11 +613,9 @@ $('.drop').click(function() {
 				  });
 				  
 
-	
-				
  				
   /*mobile nav*/
- $('.hamburger').click(function() {
+  $('.hamburger').click(function() {
   $('.hamburger').toggleClass('active');
   $('.hamburger').toggleClass('changeplacebutton');
   $('.navbar-menu').toggleClass('active');
@@ -863,10 +631,11 @@ $('.drop').click(function() {
 				    $(this).children('ul').slideToggle();
 				  });
 
+
 		});	
 			
 	</script>
-	<!--<script>
+	<script>
 window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar-menu");
 var sticky = navbar.offsetTop;
@@ -877,8 +646,9 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-	</script>-->
-	
+	</script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   	
   	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 </body>

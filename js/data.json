@@ -1,0 +1,72 @@
+[
+	{
+		"id": 1,
+		"name": "Botki Karino",
+		"price": "289,00",
+		"images": [
+		    {"url": "./shoes1.svg"},
+		    {"url": "./shoes1.svg"},
+		    {"url": "./shoes1.svg"}
+  		]
+	},
+	{
+		"id": 2,
+		"name": "Botki Karino",
+		"price": "3,00",
+		"images": [
+		    {"url": "shoes2.svg"},
+		    {"url": "shoes2.svg"},
+		    {"url": "shoes2.svg"}
+  		]
+	},
+	{
+		"id": 3,
+		"name": "Botki Karino",
+		"price": "5,00",
+		"images": [
+		    {"url": "shoes4.svg"},
+		    {"url": "shoes4.svg"},
+		    { "url": "shoes4.svg"}
+  		]
+	},
+	{
+		"id": 4,
+		"name": "Botki Karino",
+		"price": "7,00",
+		"images": [
+		    {"url": "shoes4.svg"},
+		    {"url": "shoes4.svg"},
+		    {"url": "shoes4.svg"}
+  		]
+	},
+	{
+		"id": 5,
+		"name": "Botki Karino",
+		"price": "9,00",
+		"images": [
+		    {"url": "shoes4.svg"},
+		    {"url": "shoes4.svg"},
+		    {"url": "shoes4.svg"}
+  		]
+	},
+	{
+		"id": 6,
+		"name": "Botki Karino",
+		"price": "88,00",
+		"images": [
+		    {"url": "shoes3.svg"},
+		    {"url": "shoes3.svg"},
+		    { "url": "shoes3.svg"}
+  		]
+	},
+	{
+		"id": 7,
+		"name": "Botki Karino",
+		"price": "88,00",
+		"images": [
+		    {"url": "shoes3.svg"},
+		    {"url": "shoes3.svg"},
+		    { "url": "shoes3.svg"}
+  		]
+	}
+]

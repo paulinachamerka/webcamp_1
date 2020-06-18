@@ -1,0 +1,26 @@
+{
+  "name": "armodo",
+  "version": "1.0.0",
+  "description": "Web shopping app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lankow/armodo.git"
+  },
+  "author": "Lankovv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lankow/armodo/issues"
+  },
+  "homepage": "https://github.com/Lankow/armodo#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-less": "^4.0.1"
+  }
+}

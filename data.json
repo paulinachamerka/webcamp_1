@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"name": "Botki Karino",
+		"price": "289,00",
+	},
+	{
+		"id": 2,
+		"name": "Botki Karino",
+		"price": "3,00",
+	},
+	{
+		"id": 3,
+		"name": "Botki Karino",
+		"price": "5,00",
+	},
+	{
+		"id": 4,
+		"name": "Botki Karino",
+		"price": "7,00",
+	},
+	{
+		"id": 5,
+		"name": "Botki Karino",
+		"price": "9,00",
+	},
+	{
+		"id": 6,
+		"name": "Botki Karino",
+		"price": "88,00"
+	}
+]

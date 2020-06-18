@@ -1,3 +1,8 @@
+$(document).ready(function () {
+
+variable = new XMLHttpRequest();
+
+
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
@@ -44,12 +49,56 @@ window.onclick = function(event)
 	}
 }
 
-const hamburger = documen.querySelector('.hamburger');
-const nav = documen.guerySelector('.navbar-menu');
+/*model wybrane*/
 
-const handleClick = ()
+const button = document.querySelectorAll(".show_wybrane");
+const quickview= document.querySelector(".modal_wybrane");
+const price = document.querySelector(".price");
+const images = document.querySelector(".images");
+
+button.forEach(o =>
+	o.addEventListener('click', (e) => {
+		
+		
+
+		var productid = o.getAttribute('data-product-id');
+
+
+		
+		$.ajax({
+			url: 'js/data.json',
+			dataType: 'json',
+			success: function(data) {
+
+
+				data.map(product => {
+					if(product.id == productid)
+					{
+						console.log(product.price);
+						price.innerHTML = product.price;
+						let slide; 
+						for(let i=0; i<=2; i++){
+							slide ='<div class="items"><img src="'+product.images[i].url+'" class="img-fluid" alt="zdjecie produkt 1"></div>';
+							$('.slider-for').slick('slickAdd',slide);
+						}
+						
+					}
+				});
+
+			}
+
+		});
+
+
+	}));
+/*button.addEventListener('click', function(e)
 {
-	hamburger.classlist.toggle('hamburger::active');
-}
+	var productid = button.getAttribute('data-product-id');
 
-hamburger.addEventListener('click', handleClick);
+
+
+});*/
+
+
+
+});

@@ -19,6 +19,7 @@
 
   	<script src="https://kit.fontawesome.com/72132bb0f5.js" crossorigin="anonymous"></script>
   	
+
 </head>
 <body>
 	<header>
@@ -77,12 +78,12 @@
 					  	<div class="container">
 				    		<div class="row">
 								<li class="damskie col-lg-1"><a href="#" class="nav-hover">Damskie<i class="icon-right-open flex-end"></i></a>
-								<ul class="damskie_dropdown">
+								<ul class="damskie_dropdown slideContent">
 									<div class="col-lg-7 rodzaje-baner-menu">
 									<div class="div_rodzaje col-lg-7">
 										<div class="div_dwie col-lg-4 col-10">
 										<li class="damskie_item"><a href="#" class="damskie_item_name">botki i kozaki</a>
-											<ul class="damskie_item_down">
+											<ul class="damskie_item_down slideContent">
 												<li><a href="">Botki</a></li>
 					      						<li><a href="">Glany</a></li>
 					      						<li><a href="">Kowbojki</a></li>
@@ -271,7 +272,7 @@
 
 	<div class="produkt_img">
 		<div class="container">
-			<div class="row col-7 width_produkt_img">
+			<div class="row col-11 col-lg-7 width_produkt_img">
 				<div class="vertical_carousel col-lg-2">
 					<div class="next2 left"><i class="fas fa-chevron-left fa-rotate-90"></i></div>
 					<div class="slider-nav col-10 ">
@@ -290,9 +291,7 @@
 						<div class="items">
 							<img src="zdj_prod/zdj2.svg" class="img-fluid" alt="zdjecie produkt 2">
 						</div>
-						<div class="items">
-							<img src="zdj_prod/zdj3.svg" class="img-fluid" alt="zdjecie produkt 3">
-						</div>
+						
 					</div>
 					<div class="prev2 right"><i class="fas fa-chevron-right fa-rotate-90"></i></div>
 				</div>
@@ -345,7 +344,7 @@
 			
 
 
-				<div class="col-12 col-lg-4 opis_prod_element1">
+				<div class="col-12 col-lg-5 opis_prod_element1">
 					<div class="back_grey">
 						<div>
 							<span class="opis_prod_cena">289,00 zł</span>
@@ -1003,12 +1002,11 @@
 			});
 		
 			$('.slider-nav').slick({
-				slidesToShow: 3,
+				slidesToShow: 4,
 				slidesToScroll: 1,
 				asNavFor: '.slider-for',
 				dots: false,
 				vertical: true,
-				centerMode: true,
 				focusOnSelect: true,
 				adaptiveHeight: true,
 				arrows: true,
@@ -1112,16 +1110,51 @@
   $('.hamburger').toggleClass('changeplacebutton');
   $('.navbar-menu').toggleClass('active');
 });
- $('.damskie').click(function() {
-				    $(this).children('ul').slideToggle();
+$('.damskie').click(function() {
+				    $(this).children('.damskie_dropdown').slideToggle();
+				    
+				    
 				  });
 
- $('.damskie_item').click(function() {
-				    $(this).children('ul').slideToggle();
+$('.damskie_item').click(function() {
+				    	
+				    	$(this).children('.damskie_item_down').slideToggle();
+				    	$(this).children('.damskie').removeClass();
+
+				    
+				  });
+/*$('.damskie').click(function() {
+				    $(this).children('.damskie_dropdown').toggleClass();
+				    });
+$('.damskie_item').click(function() {
+				    	
+				    $(this).children('.damskie_item_down').toggleClass();
+				    
+				  });
+*/
+				    
+/*$('.damskie').click(function() {
+					
+				    $(this).children('.damskie_dropdown').slideToggle();
+				  });				 
+
+$('.damskie_item').click(function() {
+					$(this).parent().removeClass('.damskie > ul');
+				    $(this).children('.damskie_item_down').slideToggle();
 				  });
  $('.meskie').click(function() {
 				    $(this).children('ul').slideToggle();
 				  });
+
+*/
+/* Load javascript */
+			$.getScript('js/scriptJS.js');
+			
+			/* Do not refresh after submit form */
+			$('#zakup_form').submit(function(e) {
+				e.preventDefault();
+			});
+
 
 		});	
 			
@@ -1141,5 +1174,8 @@ function myFunction() {
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+	
+
+	
 </body>
 </html>
